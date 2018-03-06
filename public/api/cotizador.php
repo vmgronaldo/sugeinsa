@@ -78,9 +78,9 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 
     
     if ($mail->Send())
-    echo "Formulario enviaod correctamente";
+    echo "1";
     else
-    echo "Error al enviar Formulario";
+    echo "0";
 
 }
 

@@ -79,10 +79,9 @@ if ($nombre == '' || $email == '' || $asunto == '' || $mensaje == '') {
 
 
   if ($mail->Send())
-    echo "Formulario enviado correctamente";
+  echo "1";
   else
-    echo "Error al enviar Formulario";
-
+  echo "0";
 }
 ?>
 
