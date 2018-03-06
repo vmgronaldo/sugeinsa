@@ -1,0 +1,1271 @@
+extends ../includes/template
+append config
+    -pageTitle = 'Lineas'
+    -description = 'Una impresionante descripcion para esta Lineas'
+    -currentPage = 'lineas'
+block main  
+
+  div(class="main-nosotros")
+    section.main-nosotros__content1
+      div.main-nosotros__content1__item1
+        h1(class="main-nosotros__content1__item1__title l-container bounce-top") Lineas
+
+    div(class="container service l-container fade-in" ng-app="tabApp")    
+      div(class="row fade-in " ng-controller="TabController")
+
+        div(class="nav-service col-md-4")
+          ul.list-group
+
+            li(class="list-group-item active" ng-class="{ active: isSet(1) }")
+              a(href ng-click="setTab(1)") Abastecimiento en general
+
+            li(class="list-group-item " ng-class="{ active: isSet(2) }")
+              a(href ng-click="setTab(2)") Articulos de oficina
+            
+            li(class="list-group-item " ng-class="{ active: isSet(3) }")
+              a(href ng-click="setTab(3)") Computo y suministros
+            
+            li(class="list-group-item " ng-class="{ active: isSet(4) }")
+              a(href ng-click="setTab(4)") Eléctricos e iluminación
+
+            li(class="list-group-item " ng-class="{ active: isSet(5) }")
+              a(href ng-click="setTab(5)") Ferreteria Industrial
+            
+            li(class="list-group-item " ng-class="{ active: isSet(6) }")
+              a(href ng-click="setTab(6)") Herramientas Industriales
+
+            li(class="list-group-item " ng-class="{ active: isSet(7) }")
+              a(href ng-click="setTab(7)") Materiales de construccion y acabados
+
+            li(class="list-group-item " ng-class="{ active: isSet(8) }")
+              a(href ng-click="setTab(8)") Materiales y equipo para limpieza
+
+            li(class="list-group-item " ng-class="{ active: isSet(9) }")
+              a(href ng-click="setTab(9)") Materiales y equipo para pintura y acabados
+            
+            li(class="list-group-item " ng-class="{ active: isSet(10) }")
+              a(href ng-click="setTab(10)") Seguridad Industrial
+          
+          div(class="card fade-in" style="width: auto;")
+            img(class="card-img-top" src="img/portadacatalogo.png" width="100%" alt="Card image cap")
+            div.card-body
+              h5.card-title ¿Como podemos ayudarte?
+              p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar unasolicitud en línea.
+              a(href="pdf/CATÁLOGO SUGEINSA.pdf" target="_blank" class="card-button button secondary")
+                i(class="icon-tcard icon-phone")   Ver catalogo
+                  
+
+          div(class="card fade-in" style="width: auto;")
+            img( class="card-img-top" src="img//cotiza-con-nosotros.jpg" width="100%" alt="Cotiza con Nosotros" title="Cotiza con Nosotros")
+            div.card-body
+              h5.card-title ¿Como podemos ayudarte?
+              p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar una solicitud en línea.
+              a(href="contacto.html" class="card-button button secondary")
+                i(class="icon-tcard icon-phone")   Cotizar
+
+          div(class="card fade-in" style="width: auto;")
+            img(class="card-img-top" src="img/contactanos.jpg" width="100%" alt="Contactanos" title="Contactanos")
+            div(class="card-body")
+              h5(class="card-title") ¿Como podemos ayudarte?
+              p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar una solicitud en línea.
+              a(href="contacto.html" class="card-button button secondary")
+                i(class="icon-tcard icon-phone")   Contactanos
+
+
+        div(class="info-nav col-md-8")
+          div(class="service-content fade-in" ng-show="isSet(1)")
+            div(id="categoria1" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/abastecimiento general/slider/no dejes sin proviciones a tu empresa.png" alt="no dejes sin proviciones a tu empresa" title="no dejes sin proviciones a tu empresa")
+                div(class="item")
+                  img(src="img/lineas/abastecimiento general/slider/comerzcializadora sugeinsa.png" alt="comerzcializadora sugeinsa" title="comerzcializadora sugeinsa")
+                div(class="item")
+                  img(src="img/lineas/abastecimiento general/slider/llegamos hasta la puera de tu empresa.png" alt="llegamos hasta la puera de tu empresa" title="llegamos hasta la puera de tu empresa")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(2)")
+            div(id="categoria2" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Articulos de Oficina/slider/no dejes las oficionas vacias de tu empleados.png" alt="no dejes las oficionas vacias de tu empleados" title="no dejes las oficionas vacias de tu empleados")
+                div(class="item")
+                  img(src="img/lineas/Articulos de Oficina/slider/cotiza con nosotros articulos de oficina.png" alt="cotiza con nosotros articulos de oficina" title="cotiza con nosotros articulos de oficina")
+                div(class="item")
+                  img(src="img/lineas/Articulos de Oficina/slider/articulos de oficina a buen precio.png" alt="articulos de oficina a buen precio" title="articulos de oficina a buen precio")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(3)")
+            div(id="categoria3" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Computo y Suministros/slider/cotiza el mejor hardware del peru.png" alt="cotiza el mejor hardware del peru" title="cotiza el mejor hardware del peru")
+                div(class="item")
+                  img(src="img/lineas/Computo y Suministros/slider/tecnologia para tu empresa.png" alt="tecnologia para tu empresa" title="tecnologia para tu empresa")
+                div(class="item")
+                  img(src="img/lineas/Computo y Suministros/slider/suministros tecnologicos.png" alt="suministros tecnologicos" title="suministros tecnologicos")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(4)")
+            div(id="categoria4" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Electricos e Ilumacion/slider/componentes electricos.png" alt="componentes electricos" title="componentes electricos")
+                div(class="item")
+                  img(src="img/lineas/Electricos e Ilumacion/slider/productos de iluminacion.png" alt="productos de iluminacion" title="productos de iluminacion")
+                div(class="item")
+                  img(src="img/lineas/Electricos e Ilumacion/slider/accesorios de iluminacion.png" alt="accesorios de iluminacion" title="accesorios de iluminacion")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(5)")
+            div(id="categoria5" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Ferreteria Indrustrial/slider/accesorios de ferreteria.png" alt="accesorios de ferreteria" title="accesorios de ferreteria")
+                div(class="item")
+                  img(src="img/lineas/Ferreteria Indrustrial/slider/herramientas de carpinteria.png" alt="herramientas de carpinteria" title="herramientas de carpinteria")
+                div(class="item")
+                  img(src="img/lineas/Ferreteria Indrustrial/slider/marcas productos ferreteros.png" alt="marcas productos ferreteros" title="marcas productos ferreteros")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(6)")
+            div(id="categoria6" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Herramientas Industriales/slider/herramientas industriales.png" alt="herramientas industriales"  title="herramientas industriales")
+                div(class="item")
+                  img(src="img/lineas/Herramientas Industriales/slider/mejores marcas herramientas industriales.png" alt="mejores marcas herramientas industriales"  title="mejores marcas herramientas industriales")
+                div(class="item")
+                  img(src="img/lineas/Herramientas Industriales/slider/cotizacion de herramientas industriales.png" alt="cotizacion de herramientas industriales" title="cotizacion de herramientas industriales")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(7)")
+            div(id="categoria7" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Materiales de construccion y acabados/slider/materiales de construccion peru.png" alt="materiales de construccion peru" title="materiales de construccion peru")
+                div(class="item")
+                  img(src="img/lineas/Materiales de construccion y acabados/slider/equipos para construccion.png" alt="equipos para construccion" title="equipos para construccion")
+                div(class="item")
+                  img(src="img/lineas/Materiales de construccion y acabados/slider/venta de materiales para acabados de construccion.png" alt="venta de materiales para acabados de construccion" title="venta de materiales para acabados de construccion")
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(8)")
+            div(id="categoria8" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Materiales y equipo de limpieza/slider/venta de materiales para limpieza.png" alt="venta de materiales para limpieza" title="venta de materiales para limpieza")
+                div(class="item")
+                  img(src="img/lineas/Materiales y equipo de limpieza/slider/cotiza productos para limpieza.png" alt="cotiza productos para limpieza" title="cotiza productos para limpieza")
+                div(class="item")
+                  img(src="img/lineas/Materiales y equipo de limpieza/slider/venta de equipos para limpieza.png" alt="venta de equipos para limpieza" title="venta de equipos para limpieza")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(9)")
+            div(id="categoria9" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Materiales  equipos de pintura y acabados/slider/equipos para pintar.png" alt="equipos para pintar" title="equipos para pintar")
+                div(class="item")
+                  img(src="img/lineas/Materiales  equipos de pintura y acabados/slider/productos para acabados.png" alt="productos para acabados" title="productos para acabados")
+                div(class="item")
+                  img(src="img/lineas/Materiales  equipos de pintura y acabados/slider/venta de materiales para pintura.png" alt="venta de materiales para pintura" title="venta de materiales para pintura")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+          div(class="service-content fade-in" ng-show="isSet(10)")
+            div(id="categoria10" class="carousel slide" data-interval="2000" data-ride="carousel")
+              div.carousel-inner
+                div(class="item active")
+                  img(src="img/lineas/Seguridad Industrial/slider/cascos para seguridad industrial.png" alt="cascos para seguridad industrial" title="cascos para seguridad industrial")
+                div(class="item")
+                  img(src="img/lineas/Seguridad Industrial/slider/venta de materiales para seguridad industrial.png" alt="venta de materiales para seguridad industrial" title="venta de materiales para seguridad industrial")
+                div(class="item")
+                  img(src="img/lineas/Seguridad Industrial/slider/venta de equipos para seguridad industrial.png" alt="venta de equipos para seguridad industrial" title="venta de equipos para seguridad industrial")
+
+            .mensaje
+              blockquote
+                p  El abastecimiento general es la funcion logistica mediante la cual se provee a una empresa todo el material necesario para su funcionamiento
+            .descripcion  
+              h3.descripcion__title  Listado de Productos:
+              ul.descripcion__list
+                div.col-md-6
+                  li
+                    span Alimentos y bebidas
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos deportivos:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Articulos diversoss:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                
+                  li
+                    span Cafeteria:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                div.col-md-6  
+                  li
+                    span Envases y embalajes:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+               
+                  li
+                    span Refrigeracion:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Vehiculos de transporte y Accesorios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+                  li
+                    span Variedad:
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tota.
+            
+
+            div.col-md-12
+              div(class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12")
+                h1(class="gallery-title") Algunos Productos
+              
+              div(align="center")
+                button(class="btn bgalery button secondary filter-button" data-filter="all") Todos
+                button(class="btn bgalery button secondary filter-button" data-filter="hdpe") Alimentos y Bebidas
+                button(class="btn bgalery button secondary filter-button" data-filter="sprinkle") Articulos Deportivos
+                button(class="btn bgalery button secondary filter-button" data-filter="spray") Articulos Diversos
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Cafeteria
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Envases y Embalajes
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Refrigeracion
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+                button(class="btn bgalery button secondary filter-button" data-filter="irrigation") Vehiculos y Accesorios
+              br
+              div.products-lineas
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter hdpe ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p1")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter sprinkle  ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p2")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom hdpe zoom-in")
+                  a(href="#p3")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p4")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p5")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p6")
+                    img(src="img/productos/2.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p7")
+                    img(src="img/productos/5.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter irrigation ih-item square effect6 from_top_and_bottom zoom-in")
+                  a(href="#p8")
+                    img(src="img/productos/3.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+
+                div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter ih-item square effect6 from_top_and_bottom spray zoom-in")
+                  a(href="#p9")
+                    img(src="img/productos/1.jpg" width="50%" height="100%" alt="img")
+                    .info
+                      h3 Heading here
+                      p Description goes here
+ 
+ 
+ 
+  include ../blocks/linkcontacto.pug   
+
+    
+

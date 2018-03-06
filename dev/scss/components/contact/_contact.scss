@@ -1,0 +1,302 @@
+.main-contact {
+    background: $white;
+    overflow-x: hidden;
+    .main-contact__content1 {
+        &__item1 {
+            width: 100%;
+            height: 120px;
+            background: $yellow;
+            color: $blue;
+            &__title {
+                margin-bottom: 0;
+                margin-top: 0;
+                display: flex;
+                justify-content: center;
+                font-family: $robotob;
+                font-size: 1.8em;
+                line-height: 4.5;
+       
+            }
+        }
+    }
+    .container-fluid {
+    
+        .content-1-cotizacion {
+            background-color: $whiteo;
+            width: 100%;
+            height: auto;
+            padding: 50px 30px 5px 30px;
+            margin: 40px 0px;
+            @include desde($large) {
+                height: 550px;
+            }
+            h4 {
+                color: $black;
+                font-family: $oswaldm;
+                margin-bottom: 23px;
+                font-size: 2em;
+                letter-spacing: 1px;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 35px;
+                    height: 6px;
+                    background: $yellow;
+                    border-radius: 3px;
+                    margin: 10px 0 0;
+                }
+            }
+            p {
+                font-family: $robotol;
+                font-size: 1.2em;
+                line-height: 1.87rem;
+                margin-bottom: 40px; // padding-bottom: 10px;
+            }
+            .contact-cotizacion {
+                display: flex;
+                flex-direction: column;
+
+                border: 2px solid rgba($color: #000000, $alpha: 0.5);
+                padding: 20px 0px;
+                @include desde($mediun) {
+                  flex-direction: row;
+                justify-content: center;
+              }
+                i {
+                    font-size: 1em;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: center;
+                    flex-flow: row wrap;
+                    color: $blue;
+                    font-style: normal;
+
+                    span {
+                        font-family: $robotol;
+                        font-size: 1em;
+                        padding-left: 15px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+            p {
+                margin: 65px 0px;
+            }
+            blockquote {
+                border-left: 5px solid $yellow;
+                margin: 50px 0px;
+                font-family: $robotob;
+                font-size: 1em;
+                padding-left: 15px;
+                line-height: 1.2;
+            }
+        }
+        .content-2-cotizacion {
+            background-color: $blue;
+            width: 100%;
+            height: 550px;
+            padding: 50px 30px;
+            margin: 40px 0px;
+            h4 {
+                color: $white;
+                font-family: $oswaldm;
+                margin-bottom: 23px;
+                font-size: 2em;
+                letter-spacing: 1px;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 35px;
+                    height: 6px;
+                    background: $yellow;
+                    border-radius: 3px;
+                    margin: 10px 0 0;
+                }
+            }
+            form {
+                padding: 40px 0px 20px 0px; // border:1px solid red;
+            
+                input[type=text],
+                select {
+                    font-family: $oswaldm;
+                    font-size: 1em;
+                    color: $black;
+                    background: $whiteo;
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                    padding: 10px 30px 10px 40px;
+                    transition: all 0.3s ease; //box-sizing: border-box !important;
+                    width: 100%;
+                    display: block;
+                    height: 49px;
+                    margin-bottom: 15px;
+                    &:focus {
+                        border: 2px solid $yellow;
+                        transition: all 0.3s ease;
+                    }
+                }
+                .file {
+                  margin: 10px 0px;
+                  font-size: 1.2em;
+                  font-family: $robotob;
+                  color:$white;
+              
+                }
+                
+                .nota{
+                  color:$white;
+                  font-size:1em;
+                }
+                select {}
+                .btnCotizacion {
+                    border: none;
+                    width: auto;
+                    height: 50px;
+                    padding: 10px 40px;
+                    font-family: $oswaldm;
+                    font-size: 1em;
+                }
+            }
+        } ///FORM CONTACTO
+        .form-contact {
+            &__title {
+                color: $black;
+                font-family: $oswaldm;
+                margin: 0px 0px 23px 0px;
+                font-size: 2em;
+                letter-spacing: 1px;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 35px;
+                    height: 6px;
+                    background: $yellow;
+                    border-radius: 3px;
+                    margin: 10px 0 0;
+                }
+            }
+            &__text {
+                font-family: $robotol;
+                font-size: 1.2em;
+                margin-bottom: 40px;
+                padding: 0px;
+            }
+            &__content1 {
+                padding: 30px 0px;
+                border-top: 3px solid $blue;
+                margin-bottom: 50px;
+                &__title {
+                    font-family: $robotob;
+                    font-size: 1.5em;
+                    color: $black;
+                    line-height: 45px;
+                    margin-bottom: 10px;
+                }
+                &__contact {
+                    display: flex;
+                    flex-direction: column;
+                    i {
+                        display: flex;
+                        margin: 0 0 13px;
+                        line-height: 22px;
+                        font-style: normal;
+                        font-size: 1.5em;
+                        span {
+                            padding-left: 10px;
+                            font-size: .8em;
+                            font-family: $robotol;
+                        }
+                    }
+                }
+                &__redes {
+                    margin-top: 10px;
+                    a {
+                        margin-right: 10px;
+                        i {
+                            font-size: 2rem;
+                            color: $blue;
+                            transition: all 1s;
+                            &:hover {
+                                opacity: .8;
+                                color: $black;
+                                transition: all 1s;
+                            }
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &__content2 {
+                float: right;
+                padding: 40px 0px;
+                border-top: 3px solid $blue;
+                margin-bottom: 50px;
+                &__title {
+                    font-family: $robotob;
+                    font-size: 1.5em;
+                    color: $black;
+                    margin-bottom: 25px;
+                }
+                form {
+                    input,
+                    textarea {
+                        font-family: $oswaldm;
+                        font-size: 1.2rem;
+                        color: $black;
+                        background: $whiteo;
+                        border: none;
+                        box-shadow: none;
+                        outline: none;
+                        padding: 10px 30px 10px 40px;
+                        transition: all 0.3s ease; //box-sizing: border-box !important;
+                        width: 100%;
+                        display: block;
+                        height: 49px;
+                        margin-bottom: 15px;
+                        &:focus {
+                            border: 2px solid $yellow;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                    textarea {
+                        height: 100px !important;
+                    }
+                    .btnCotizacion {
+                        border: none;
+                        width: auto;
+                        height: 50px;
+                        padding: 10px 40px;
+                        font-family: $oswaldm;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    
+    }
+    .content-map {
+      width: 100%;
+      &__item {
+          overflow: hidden;
+          iframe {
+              border: none;
+              width: 100%;
+              height: 500px;
+              overflow: hidden;
+          }
+      }
+  }
+}
+
+.c1 {
+  padding: 0px;
+  
+}
+
+.c2 {
+  padding: 0px;
+  
+}

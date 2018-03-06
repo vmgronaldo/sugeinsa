@@ -1,0 +1,105 @@
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.main-aliados {
+  position: relative;
+top:-50px;
+
+    &__content {
+        &__text {
+         position: relative;
+         // background: red;
+          padding: 0px 0px;
+          text-align: center;
+            &__title {
+                font-family: $robotob;
+                color:$blue;
+                font-size: 2em;
+        
+             
+            }
+               
+            hr{
+                height: 2px ;
+                width: 40px;
+                position: relative;
+                text-align: center;
+                margin: 10px auto;
+                background-color: $blue;
+                border: none;
+
+               }
+            &__text {
+                padding: 20px 0px ;
+                font-family: $robotol;
+                font-size: 1.2em;
+                color:$categorycolor;
+                @include desde($mediun) {
+                 
+                    padding: 60px 0px;
+                }
+            
+
+            }
+        }
+        &__images {
+          display: flex;
+          flex-direction: row;
+            position: relative;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            height: 100px;
+            width: 100%;
+        
+
+            overflow: hidden;
+
+             &::before {
+                background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 100px;
+                z-index: 2;
+                left: -10px;
+                top: 0;
+              }
+
+               &::after {
+                background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 100px;
+                z-index: 2;
+                right: -10px;
+                top: 0;
+                transform: rotateZ(180deg);                
+              }
+            &__content {
+           
+                animation: scroll 40s linear infinite;
+                display: flex;
+                width: calc(250px * 14);
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+extends ../includes/template
+append config
+    -pageTitle = 'Contacto'
+    -description = 'Una impresionante descripcion para esta contacto'
+    -currentPage = 'contacto'
+block main  
+  <!-- Conacto Inicio-->
+  .main-contact  
+    section.main-contact__content1
+      .main-contact__content1__item1
+        h1(class="main-contact__content1__item1__title l-container") Contacto
+    div(class="container-fluid l-container")    
+      .row
+        div(class="c1 col-xs-12 col-md-6 slide-left")
+          div(class="content-1-cotizacion")
+            h4 Solicita tu cotización
+            p ¿Tiene preguntas acerca de cómo exacto.com.pe puede ayudar a su empresa? Envíenos un correo electrónico y nos pondremos en contacto en breve, o teléfono de 8:00-18:00 lunes a viernes.
+            div(class="contact-cotizacion")
+              i(class="icon-phone")
+                span (01) 237- 4491
+              i(class="icon-mail")
+                span ventas@sugeinsa.com.pe
+            blockquote Sus datos son estrictamente confidenciales de acuerdo con nuestra política de privacidad
+        div(class="c2 col-xs-12 col-md-6 slide-right")
+          div(class="content-2-cotizacion")
+            h4 Llenar formulario
+            form(id="frmCotizacion" data-toggle="validator" role="form" action="api/cotizador.php" method="post" name="frmCotizacion" enctype="multipart/form-data")
+              input(type="text" name="nombre" id="nombre"  placeholder="Nombre" required)
+              select(name="categoria" id="categoria")
+                option(value="Abastecimiento en General") Abastecimiento en Genera
+                option(value="Articulos de Oficina") Articulos de Oficina
+                option(value="Computo y Suministros") Computo y Suministros
+                option(value="Eléctricos e Iluminación") Eléctricos e Iluminación
+                option(value="Ferreteria Industrial") Pintura
+                option(value="Herramientas Industriales") Tapiceria
+                option(value="Materiales y equipos de limpieza") Materiales y equipos de limpieza 
+                option(value="Materiales y equipos de Pintura y acabados") Materiales y equipos de limpieza 
+                option(value="Seguridad Industrial") Seguridad Industrial
+              input(type="text" name="celular" id="celular" placeholder="Numero Celular" required)
+              input(type="text" name="email" id="email"  placeholder="E-mail" required)
+              input(type="file" class="file " name="adjunto" id="adjunto")
+              p.nota puede enviar su lista de productos a cotizar (.docx,.csv,xlsx,pdf)
+              button(type="submit" class="btnCotizacion button tercer") ENVIAR
+      div(class="row form-contact")
+        h1(class="form-contact__title fade-in") Contactenos
+        div(class="form-contact__text col-md-12 fade-in")
+          p Por favor, háganos saber si usted tiene una pregunta, quiere dejar un comentario, o si desea más información sobre nuestros servicios.
+        div(class="form-contact__content1  col-md-4 slide-left")
+          h4(class="form-contact__content1__title") Consultas de los clientes
+          div.form-contact__content1__contact
+            i.icon-map-marker
+              span Jr. Camana 1043 Oficina 404 Lima
+            i.icon-phone
+              span (01) 237- 4491
+            i.icon-mail
+              span ventas@sugeinsa.com.pe
+          div.form-contact__content1__redes
+            a(href="")
+              i(class="icon-facebook")
+            a(href="")
+              i(class="icon-envelope")
+        div(class="form-contact__content2 col-md-7 col-xs-12 slide-right")
+          h4.form-contact__content2__title Formulario de Contactenos
+          form(id="frmContacto" data-toggle="validator" role="form" action="api/asunto.php" method="post" name="frmContacto" enctype="multipart/form-data")
+            input(class="col-md-4" type="text" name="nombre" id="nombre" placeholder="Nombre" required)
+            input(class="col-md-4" type="text" name="email" id="email" placeholder="E-Mail" required)
+            input(class="col-md-4" type="text" name="asunto" id="asunto" placeholder="Asunto" required)
+            textarea(class="col-md-12" name="mensaje" id="mensaje" cols="30" rows="50" height="50px" placeholder="Mensaje" required)
+            button(type="submit" class="btnCotizacion button contact") ENVIAR
+    .content-map
+      .content-map__item
+        iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7803.724498574184!2d-77.03928072147691!3d-12.052997461528923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe52b4d9a463c3dd1!2sSUGEINSA!5e0!3m2!1ses-419!2spe!4v1518633404012" allowfullscreen)
+  <!-- Conacto Inicio-->

@@ -1,0 +1,258 @@
+extends ../includes/template
+append config
+    -pageTitle = 'Inicio'
+    -description = 'Una impresionante descripcion para esta Inicio'
+    -currentPage = 'inicio'
+block main
+  <!-- Slider Inicio-->
+  div(id="SliderPrincipal" class="carousel slide" data-interval="3000" data-ride="carousel")
+    ol.carousel-indicators
+      li(data-target="#SliderPrincipal" data-slide-to="0" class="active")
+      li(data-target="#SliderPrincipal" data-slide-to="1" )
+      li(data-target="#SliderPrincipal" data-slide-to="2" )
+    div.carousel-inner
+      div(class="item active")
+        img(src="img/Ferreteria Industrial.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
+        div.content-slider
+          div(class="carousel-caption fade-in")    
+            h1.carousel-caption__title
+              span Clientes de  
+              span servicio de construccion 
+            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
+            p 
+              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+      div(class="item ")
+        img(src="img/Venta de Herramientas Industriales.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
+        div.content-slider
+          div(class="carousel-caption fade-in")    
+            h1.carousel-caption__title
+              span Clientes de  
+              span servicio de construccion 
+            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
+            p   
+              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+      div(class="item")
+        img(src="img/Herramientas de Gafitería.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
+        div.content-slider
+          div(class="carousel-caption fade-in")    
+            h1.carousel-caption__title
+              span Clientes de  
+              span servicio de construccion 
+            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
+            p
+              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+    a(class="carousel-control left" href="#SliderPrincipal" data-slide="prev")    
+      span(class="glyphicon glyphicon-chevron-left")
+    a(class="carousel-control right" href="#SliderPrincipal" data-slide="next")    
+      span(class="glyphicon glyphicon-chevron-right")
+  <!-- Slider Inicio-->
+
+  <!-- Contador Inicio-->
+
+  div(class="main-count l-container zoom-in")
+    div.main-count__item
+      span(class="main-count__item__number counter") 300
+      p.main-count__item__text Clientes
+    div.main-count__item
+      span(class="main-count__item__number counter") 215
+      p.main-count__item__text Proveedores
+    div.main-count__item
+      span(class="main-count__item__number counter") 105
+      p.main-count__item__text Marcas
+    div.main-count__item
+      span(class="main-count__item__number counter") 95
+      p.main-count__item__text Aliados
+
+
+  <!-- Contador Inicio-->
+  <!-- categorias Inicio-->
+  div(class="main-category l-container bounce-left")
+      ul(class="main-category__item" id="c")
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/caag.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Abastecimiento en General
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/caao.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Articulos de Oficina
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/caec.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Computo y Suministros
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/caei.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Electricos e iluminacion
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/cafi.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Ferreteria Industrial
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/cathi.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Herramientas Industriales
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/camc.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Material de Construccion y acabados
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/cael.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Material y equipo para limpieza
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/capc.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Material y equipo para pintura y acabados
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/casi.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Seguridad e Industrial
+        li.main-category__item__items
+          a(class="main-category__item__items__link" href="#")
+            img(class="main-category__item__items__link__img" src="img/categorias/casi.svg" type="image/svg+xml")
+            span.main-category__item__items__link__title Seguridad e Industrial
+  <!-- categorias Inicio-->
+
+  <!-- Informacion Inicio-->
+  div.main-about
+    div(class="main-about__item l-container")
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Quienes Somos
+        p.main-about__item__items__text Somos un equipo de profesionales especializados en soluciones empresariales que busca la excelencia brindando   todo tipo de productos y servicios para abastecer a las empresas.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Servicios
+        p.main-about__item__items__text Consolidamos sus diversos requerimientos, contando con un socio comercial confiable, que le permita conseguir eficiencias y orientarse a labores de mayor valor.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Unidades de Negocio
+        p.main-about__item__items__text En SUGEINSA contamos con diez unidades de negocios que permitan a nuestros clientes contar con productos y servicios acordes con sus necesidades.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Areas de Negocio
+        p.main-about__item__items__text Tenemos productos para el rubro industrial, minero, medico, agricultor,petrolero, tecnológico, etc. Contamos con todos los productos que te puedas imaginar por que contamos con mas de 300 marcas.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Catálogo
+        p.main-about__item__items__text Descubre lo que tenemos en nuestro catálogo online , te Ofrecemos una variedad de equipos y productos en todo tipo del sector industrial.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+      div.main-about__item__items 
+        div.main-about__item__items__circle
+          i(class="main-about__item__items__circle__icon icon-home")
+        span.main-about__item__items__title Cotización
+        p.main-about__item__items__text Podras Cotizar Nuestros productos una ves visto nuestro catálogo,dale click a "INFORMACION" y consulta los siguientes numeros telefonicos o llena el formulario.
+        a(href="nosotros.html" class="main-about__item__items__button button secondary") INFORMACION
+
+  <!-- Informacion Inicio-->
+
+  <!-- Brochure Inicio-->
+  div.main-catalog 
+    div(class="main-catalog__item l-container")
+      div(class="main-catalog__item__content")
+        span.main-catalog__item__content__title BROCHURE
+        hr
+        p.main-catalog__item__content__tex Por medio de la presente les doy la bienvenida a nuestra Empresa dedicada en Soluciones de Abastecimientos de suministros industriales. Somos el mejor aliado para tu empresa y/o institución nosotros nos encargamos de cubrir todas sus necesidades, provisionando suministros generales.
+        button(class="main-catalog__item__content__button button tercer") DESCARGAR
+
+  <!-- Brochure Inicio-->
+
+   <!-- Aliados Inicio-->
+   div.main-aliados
+    div(class="main-aliados__content l-container")
+      div.main-aliados__content__text
+        span.main-aliados__content__text__title NUESTROS ALIADOS
+        hr
+        p.main-aliados__content__text__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel blanditiis a incidunt nihil commodi laborum. Voluptate niinima nemo quas.
+      div.main-aliados__content__images
+        div.main-aliados__content__images__content
+          img(src="img/aliados/1.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/2.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/3.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/4.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/5.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/6.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/7.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/8.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/9.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/10.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/11.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/12.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/13.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/14.png" height="100" width="250" alt="" )
+        div.main-aliados__content__images__content
+          img(src="img/aliados/15.png" height="100" width="250" alt="" )
+        
+  <!-- Aliados Inicio-->
+
+  <!-- Galleria Inicio-->
+  div(class="container gallery-container l-container")
+    h1 GALERIA
+    hr
+    h2(class="page-description text-center") Somos la mejor opción en Suministros generales para tu Industria.
+    div.tz-gallery
+      div.row
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/suministros-generales.png")
+            img(src="img/about/suministros-generales.png" alt="Suministros Generales" title="Suministros Generales")
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/componentes-tecnologicos.png")
+            img(src="img/about/componentes-tecnologicos.png" alt="Componentes Tecnologicos" title="Componentes Tecnologicos")
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/equipos-de-iluminacion.png")
+            img(src="img/about/equipos-de-iluminacion.png" alt="Equipos de Iluminacion" title="Equipos de Iluminacion")
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/componentents-electronicos.png")
+            img(src="img/about/componentents-electronicos.png" alt="Componentes Electricos" title="Componentes Electricos")
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/suministros-de-pintura.png")
+            img(src="img/about/suministros-de-pintura.png" alt="Suministros de pintura" title="Suministros de pintura")
+        div(class="col-sm-6 col-md-4")
+          a(class="lightbox" href="img/about/equipos-de-seguridad.png")
+            img(src="img/about/equipos-de-seguridad.png" alt="Equipos de Seguridad" title="Equipos de Seguridad")
+    hr
+  <!-- Galleria Inicio-->
+
+  <!-- Mapa Inicio-->
+
+  div.main-ubicacion
+    div.main-ubicacion__content
+      span.main-ubicacion__content__title UBICACION
+      hr
+      div.main-ubicacion__content__map
+       iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7803.724498574184!2d-77.03928072147691!3d-12.052997461528923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe52b4d9a463c3dd1!2sSUGEINSA!5e0!3m2!1ses-419!2spe!4v1518633404012" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen)
+       img(src="img/categorias/imgabout.svg" type="image/svg+xml")
+
+  <!-- Mapa Inicio-->
+
+
+
+
+
+
+
+
+

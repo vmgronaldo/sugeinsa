@@ -1,0 +1,131 @@
+.main-about {
+    //border: 1px solid red;
+    background: #f2f2f2;
+    position: relative;
+    top: -80px;
+    //transform: skewY(-1deg);
+    &__item {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+        padding: 80px 0px 120px 0px;
+        margin: 0px auto;
+    
+        //transform: skewY(1deg);
+        @include desde($mediun) {
+          width: 90%;     
+          margin: 0px auto;
+        }
+        @include desde($large) {
+          width: calc(90% - 10em);          
+          margin: 0px auto;
+        }
+      
+  
+        &::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: $white;
+            position: absolute;
+            left: 44%;
+            top: -25px;
+            transform: rotate(-45deg);
+            @include desde($mediun) {
+                left: 47%;
+            }
+            @include desde($x-large) {
+                left: 48.5%;
+            }
+        }
+        &__items {
+          border-radius: .25rem;
+            background: $white;
+            height: 350px;
+            cursor: pointer;
+            padding: 40px;
+            margin: 20px 0px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 1s;
+            @include desde($mediun) {
+                width: calc(50% - 1em);
+            }
+            @include desde($x-large) {
+              padding: 40px 10px;
+         
+            } 
+            @include desde($x-large) {
+                padding: 40px 30px;
+                width: calc(32% - .2em);
+                margin: 10px 5px;
+            } 
+            // &:hover {
+            //     box-shadow: 0px 0px 10px #ffa500;
+            //     transition: all 1s;
+            // }
+            &:hover>&__circle {
+                background: $yellow;
+                transition: all 1s;
+
+            }
+            &__circle {
+                background: $whiteo;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                margin: 0px auto;
+                text-align: center;
+                transition: all 1s;
+                @include desde($mediun) {
+                    height: 80px;
+                    width: 80px;
+                  
+                }
+                &__icon {
+                    color: $black;
+                    font-size: 1.8em;
+                    line-height:2.8;
+                    @include desde($mediun) {
+                      line-height:3.5;  
+                  
+                    }
+                }
+            }
+            &__title {
+                font-size: 1.2em;
+                font-family: $oswaldm;
+      
+        
+            }
+            &__text {
+                font-family: $robotol;
+                margin: 20px 0px;
+                font-size: 1em;
+                color: $categorycolor;
+           
+                @include desde($mediun) {
+                    margin: 10px 0px;
+                    height: 120px;
+                }
+             
+            }
+            &__button {
+                color: $yellow !important;
+                border: none;
+                width: auto;
+                height: 200px;
+                padding: 10px 40px;
+                font-family: $robotob;
+                font-size: 1em;
+
+                color: $blue;
+                z-index:99999999999999;
+         
+         
+            }
+        }
+    }
+}
+

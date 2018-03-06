@@ -1,0 +1,270 @@
+extends ../includes/template
+append config
+    -pageTitle = 'Galeria'
+    -description = 'Una impresionante descripcion para esta Galeria'
+    -currentPage = 'galeria'
+block main
+  <!-- Galeria -->
+  div.main-nosotros
+    section.main-nosotros__content1
+      div.main-nosotros__content1__item1
+        h1(class="main-nosotros__content1__item1__title l-container") Galeria
+    
+    div(class="container l-container")
+      .row
+        h2.title-gallery-productos Marcas
+      div#main_area
+        .row
+          .col-sm-6
+            div(class="col-xs-12" id="slider")
+              .row  
+                div(class="col-sm-12" id="carousel-bounding-box")
+                  div(style="top: 20px  !important;" class="carousel slide" id="galleryproductos")
+                    div.carousel-inner
+                      div(class="active item" data-slide-number="166")
+                        img(src="img/marcas/marca-energizer-sugeinsa.jpg" alt="Productos Energizer" title="Productos Energizer")
+
+                      div(class="item" data-slide-number="11")
+                        img(src="img/marcas/marca-blackdecker-sugeinsa.jpg" alt="Equipos Black decker" title="Equipos Black decker")
+                      
+                      div(class="item" data-slide-number="22")
+                        img(src="img/marcas/marca-dewalt-sugeinsa.jpg" alt="Equipos De Walt" title="Equipos De Walt")
+                      
+                      div(class="item" data-slide-number="33")
+                        img(src="img/marcas/marca-bahco-sugeinsa.jpg" alt="Productos Bahco" title="Productos Bahco")
+                      
+                      div(class="item" data-slide-number="44")
+                        img(src="img/marcas/marca-soldimix-sugeinsa.jpg" alt="Productos Soldi Mix" title="Productos Soldi Mix")
+                      
+                      div(class="item" data-slide-number="55")
+                        img(src="img/marcas/marca-cat-sugeinsa.jpg" alt="Productos y equipos CAT" title="Productos y equipos CAT")
+                      
+                      div(class="item" data-slide-number="66")
+                        img(src="img/marcas/marca-abro-sugeinsa.jpg" alt="Productos Abro" title="Productos Abro")
+                      
+                      div(class="item" data-slide-number="77")
+                        img(src="img/marcas/marca-kotplast-sugeinsa.jpg" alt="Tuberias Kotplast" title="Tuberias Kotplast")
+                      
+                      div(class="item" data-slide-number="88")
+                        img(src="img/marcas/marca-travex-sugeinsa.jpg" alt="Cerraduras Travex" title="Cerraduras Travex")
+                      
+                      div(class="item" data-slide-number="99")
+                        img(src="img/marcas/marca-oatey-sugeinsa.jpg" alt="Cementos Disolventes" title="Cementos Disolventes")
+                      
+                      div(class="item" data-slide-number="100")
+                        img(src="img/marcas/marca-epem-sugeinsa.jpg" alt="Interuptores y tomacorrientes" title="Interuptores y tomacorrientes")
+                      
+                      div(class="item" data-slide-number="111")
+                        img(src="img/marcas/marca-3m-sugeinsa.jpg" alt="Productos 3M" title="Productos 3M")
+
+                      div(class="item" data-slide-number="122")
+                        img(src="img/marcas/marca-veto-sugeinsa.jpg" alt="materiales eléctricos" title="materiales eléctricos")
+
+                      div(class="item" data-slide-number="133")
+                        img(src="img/marcas/marca-GE-sugeinsa.jpg" alt="Servicio de Transporte" title="Servicio de Transporte")
+                      
+                      div(class="item" data-slide-number="144")
+                        img(src="img/marcas/marca-forte-sugeinsa.jpg"  alt="Cerraduras Forte" title="Cerraduras Forte")
+                    
+                      div(class="item" data-slide-number="155")
+                        img(src="img/marcas/marca-atlas-sugeinsa.jpg"  alt="materiales de pintura" title="materiales de pintura")
+        
+          div(class="col-sm-6" id="slider-thumbs")    
+            ul.hide-bullets      
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-16")
+                  img(src="img/marcas/marca-energizer-sugeinsa.jpg" alt="Productos Energizer" title="Productos Energizer")
+              
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-1")
+                  img(src="img/marcas/marca-blackdecker-sugeinsa.jpg" alt="Equipos Black decker" title="Equipos Black decker")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-2")
+                  img(src="img/marcas/marca-dewalt-sugeinsa.jpg" alt="Equipos De Walt" title="Equipos De Walt")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-3")
+                  img(src="img/marcas/marca-bahco-sugeinsa.jpg" alt="Productos Bahco" title="Productos Bahco")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-4")
+                  img(src="img/marcas/marca-soldimix-sugeinsa.jpg" alt="Productos Soldi Mix" title="Productos Soldi Mix")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-5")
+                  img(src="img/marcas/marca-cat-sugeinsa.jpg" alt="Productos y equipos CAT" title="Productos y equipos CAT")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-6")
+                  img(src="img/marcas/marca-abro-sugeinsa.jpg" alt="Productos Abro" title="Productos Abro")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-7")
+                  img(src="img/marcas/marca-kotplast-sugeinsa.jpg" alt="Tuberias Kotplast" title="Tuberias Kotplast")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-8")
+                  img(src="img/marcas/marca-travex-sugeinsa.jpg" alt="Cerraduras Travex" title="Cerraduras Travex")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-9")
+                  img(src="img/marcas/marca-oatey-sugeinsa.jpg" alt="Cementos Disolventes" title="Cementos Disolventes")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-10")
+                  img(src="img/marcas/marca-epem-sugeinsa.jpg" alt="Interuptores y tomacorrientes" title="Interuptores y tomacorrientes")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-11")
+                  img(src="img/marcas/marca-3m-sugeinsa.jpg" alt="Productos 3M" title="Productos 3M")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-12")
+                  img(src="img/marcas/marca-veto-sugeinsa.jpg" alt="materiales eléctricos" title="materiales eléctricos")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-13")
+                  img(src="img/marcas/marca-GE-sugeinsa.jpg" alt="Servicio de Transporte" title="Servicio de Transporte")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-14")
+                  img(src="img/marcas/marca-forte-sugeinsa.jpg"  alt="Cerraduras Forte" title="Cerraduras Forte")
+
+              li.col-sm-3
+                a(class="thumbnail" id="pcarousel-selector-15")
+                  img(src="img/marcas/marca-atlas-sugeinsa.jpg"  alt="materiales de pintura" title="materiales de pintura")
+
+    div( class="container l-container" style=" margin-bottom: 50px !important;")
+      div#main_area
+        .row
+          div(class="marcas-tub col-sm-6" id="slider-thumbs")
+            ul(class="marcars-ul hide-bullets")
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-16")
+                  img(src="img/marcas/marca-bticino-sugeinsa.jpg" alt="materiales electricos bticino" title="materiales electricos bticino")
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-1")
+                  img(src="img/marcas/marca-asus-sugeinsa.jpg" alt="productos asus" title="productos asus")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-2")
+                  img(src="img/marcas/marca-epson-sugeinsa.jpg" alt="impresoras y suministros epson" title="impresoras y suministros epson")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-3")
+                  img(src="img/marcas/marca-nestle-sugeinsa.jpg" alt="Alimentos y Bebidas" title="Alimentos y Bebidas")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-4")
+                  img(src="img/marcas/marca-sansung-sugeinsa.jpg" alt="Dispositivos Electronicos" title="Dispositivos Electronicos")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-5")
+                  img(src="img/marcas/marca-phillins-sugeinsa.jpg" alt="Productos phillips" title="Productos phillips")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-6")
+                  img(src="img/marcas/marca-cannon-sugeinsa.jpg" alt="Suministros y Impresoras Canon" title="Suministros y Impresoras Canon")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-7")
+                  img(img src="img/marcas/marca-cantol-sugeinsa.jpg" alt="Productos de Seguridad Cantol" title="Productos de Seguridad Cantol")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-8")
+                  img(src="img/marcas/marca-pegafan-sugeinsa.jpg" alt="Productos de Pegafan" title="Productos de Pegafan")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-9")
+                  img(src="img/marcas/marca-duracell-sugeinsa.jpg"  alt="Productos y tecnologia duracell" title="Productos y tecnologia duracell")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-10")
+                  img(img src="img/marcas/marca-hp-sugeinsa.jpg" alt="Laptos,Computadoras y Impresoras HP" title="Laptos,Computadoras y Impresoras HP")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-11")
+                  img(src="img/marcas/marca-uhu-sugeinsa.jpg" alt="Pegamentos UHU" title="Pegamentos UHU")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-12")
+                  img(src="img/marcas/marca-lenovo-sugeinsa.jpg" alt="Laptos,Computadoras lenovo" title="Laptos,Computadoras lenovo")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-13")
+                  img(src="img/marcas/marca-stanley-sugeinsa.jpg" alt="Herramientas Stanley" title="Herramientas Stanley")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-14")
+                  img(src="img/marcas/marca-elite-sugeinsa.jpg"  alt="Papel Higiénico Elite" title="Papel Higiénico Elite")
+
+              li.col-sm-3
+                a(class="thumbnail" id="carousel-selector-15")
+                  img(src="img/marcas/marca-sika-sugeinsa.jpg"  alt="Productos Sika" title="Productos Sika")                                    
+         
+          div.col-sm-6
+            div(class="col-xs-12" id="slider")
+              .row
+                div(class="col-sm-12" id="carousel-bounding-box")
+                  div(style="top: 20px;" class="carousel slide" id="galleryclientes")
+                    .carousel-inner
+                      div(class="active item" data-slide-number="16")
+                        img(src="img/marcas/marca-bticino-sugeinsa.jpg" alt="materiales electricos bticino" title="materiales electricos bticino")
+                      
+                      div(class="item" data-slide-number="1")
+                        img(src="img/marcas/marca-asus-sugeinsa.jpg" alt="productos asus" title="productos asus")
+
+                      div(class="item" data-slide-number="2")
+                        img(src="img/marcas/marca-epson-sugeinsa.jpg" alt="impresoras y suministros epson" title="impresoras y suministros epson")
+
+                      div(class="item" data-slide-number="3")
+                        img(src="img/marcas/marca-nestle-sugeinsa.jpg" alt="Alimentos y Bebidas" title="Alimentos y Bebidas")
+
+                      div(class="item" data-slide-number="4")
+                        img(src="img/marcas/marca-sansung-sugeinsa.jpg" alt="Dispositivos Electronicos" title="Dispositivos Electronicos")
+
+                      div(class="item" data-slide-number="5")
+                        img(src="img/marcas/marca-phillins-sugeinsa.jpg" alt="Productos phillips" title="Productos phillips")
+
+                      div(class="item" data-slide-number="6")
+                        img(src="img/marcas/marca-cannon-sugeinsa.jpg" alt="Suministros y Impresoras Canon" title="Suministros y Impresoras Canon")
+
+                      div(class="item" data-slide-number="7")
+                        img(img src="img/marcas/marca-cantol-sugeinsa.jpg" alt="Productos de Seguridad Cantol" title="Productos de Seguridad Cantol")
+
+                      div(class="item" data-slide-number="8")
+                        img(src="img/marcas/marca-pegafan-sugeinsa.jpg" alt="Productos de Pegafan" title="Productos de Pegafan")
+
+                      div(class="item" data-slide-number="9")
+                        img(src="img/marcas/marca-duracell-sugeinsa.jpg"  alt="Productos y tecnologia duracell" title="Productos y tecnologia duracell")
+
+                      div(class="item" data-slide-number="10")
+                        img(img src="img/marcas/marca-hp-sugeinsa.jpg" alt="Laptos,Computadoras y Impresoras HP" title="Laptos,Computadoras y Impresoras HP")
+
+                      div(class="item" data-slide-number="11")
+                        img(src="img/marcas/marca-uhu-sugeinsa.jpg" alt="Pegamentos UHU" title="Pegamentos UHU")
+
+                      div(class="item" data-slide-number="12")
+                        img(src="img/marcas/marca-lenovo-sugeinsa.jpg" alt="Laptos,Computadoras lenovo" title="Laptos,Computadoras lenovo")
+
+                      div(class="item" data-slide-number="13")
+                        img(src="img/marcas/marca-stanley-sugeinsa.jpg" alt="Herramientas Stanley" title="Herramientas Stanley")
+
+                      div(class="item" data-slide-number="14")
+                        img(src="img/marcas/marca-elite-sugeinsa.jpg"  alt="Papel Higiénico Elite" title="Papel Higiénico Elite")
+
+                      div(class="item" data-slide-number="15")
+                        img(src="img/marcas/marca-sika-sugeinsa.jpg"  alt="Productos Sika" title="Productos Sika")                                    
+           
+    include ../blocks/linkcontacto.pug
+
+
+
+
+
+
+
+
+
+  <!-- Galeria -->

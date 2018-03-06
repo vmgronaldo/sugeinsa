@@ -1,0 +1,86 @@
+.main-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //border: 1px solid red;
+    height: 160px;
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    width: 100%;
+    @include desde($large) {
+    
+      }
+    @include desde($small ) {
+      height: 180px;
+    }
+    @include desde($mediun ) {
+      height: 230px;
+    }
+    @include desde($large) {
+      height: 120px;
+      top: -150px;
+    }
+    &__item {
+        position: absolute;
+        width: 80%;
+        height: 150px; //border: 1px solid black;        
+        top: 0px;
+        @include desde($large) {
+            width: 70%;
+            margin: 0px auto;
+        }
+     
+        &__items {
+            position: absolute;
+            text-align: center;
+            width: 25%;
+            opacity: 0;
+            transition: 1s opacity;
+           // border: 1px solid yellow;
+            list-style: none;
+            margin: 20px 0px;
+            @include desde($mediun) {
+            
+            }
+            @include desde($large) {
+            }
+            &__link {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+                &:focus {
+                  text-decoration: none;
+              }
+                &__img {
+                    // border:1px solid red;
+                    width: 30px;
+                    height: 30px;
+                    margin: 0px auto;
+                    @include desde($mediun) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                &__title {
+                    padding: 10px;
+                    color: $blue;
+                    font-family: $robotob;
+                    font-size: .6em;
+                    @include desde($mediun) {
+                        padding: 10px 20px;
+                        font-size: 1em;
+                    }
+               
+                }
+            }
+        }
+    }
+}
+
+.activo {
+    opacity: 1;
+}

@@ -1,0 +1,115 @@
+.headtop {
+    width: 100%;
+    position: relative;
+    top: 0;
+    background: $blue;
+    opacity: 1;
+    z-index: 9999999;
+    .info__head {
+        padding: 0px;
+        color: $whiteo;
+        @include desde($large) {
+          padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .info__head__contact {
+            display: none;
+            @include desde($large) {
+                display: flex;
+                flex-direction: row;
+                padding: 5px 0px;
+            }
+         
+            span {
+                display: flex;
+                justify-content: center;
+                flex-flow: row wrap;
+                font-family: $robotol;
+                font-size: 1em;
+                @include desde($large) {
+                    margin-right: 5px;
+                }
+                i {
+                    font-style: normal;
+                    margin-left: 5px;
+                    position: relative;
+                    top: 2px;
+                }
+               
+            }
+        }
+        .info__head__social {
+            padding-top: 5px;
+            display: none;
+          
+
+            @include desde($large) {
+              display: flex;
+              justify-content: center ;
+              flex-flow: row wrap; 
+          }
+            a {
+                color: $white;
+                text-decoration: none;      
+                @include desde($large) {     
+                    font-size: 1em;
+                    margin-bottom: 10px;
+                }
+            }
+            a:nth-child(2) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.opacidad{
+  opacity: 1 !important;
+}
+.main-header {
+    background: $blue;
+    position: relative;
+    top: -1px !important;
+    z-index: 999999999999 !important;
+    @include desde($large) {
+        height: 80px;
+    }
+    @include desde($x-large) {
+        top: 0px !important;
+        opacity: 0.9;
+    }
+    .l-container {
+        .head__header {
+            @include desde($large) {
+                display: flex;
+                justify-content: space-between;
+                height: 80px;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                margin: 0px auto;
+                cursor: pointer;
+                @include desde($large) {
+                    justify-content: initial;
+                    height: 100px;
+                    margin: 0px;
+                }
+                .logo {
+                    // border:1px solid red;
+                    width: 80%;
+                    height: 80px;
+                    margin: 0px auto;
+                    @include desde($mediun) {
+                        margin: 10px auto;
+                    }
+                    @include desde($large) {
+                      width: 60%;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,283 @@
+.service {
+    margin-top: 30px;
+    margin-bottom: 100px; // border:1px solid red;
+    width: 90%;
+
+    @include desde($large) {
+      width: 80%;
+     
+  }
+}
+
+.active {
+    background: $yellow !important;
+    border: none !important;
+}
+
+.nav-service {
+    // border:1px solid red;
+    @include desde($large) {
+        padding: 0px 20px 0px 0px;
+
+    }
+    .list-group {
+        //  border:1px solid black;
+        .list-group-item {
+            //   border:1px solid green;
+            cursor: pointer;
+            a {
+                font-size: 1.2em;
+                font-family: $robotob;
+                color: $black;
+                width: 100%;
+                position: relative;
+                padding: 10px 0px 10px 0px;
+                display: block;
+              
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            a:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.service-content {
+    //border:1px solid red;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    .carousel {
+        // border:1px solid red;
+        .carousel-inner {
+            //   border:1px solid black;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    .mensaje {
+        width: 100%;
+        margin: 20px 0px;
+        blockquote {
+            padding: 21px 30px 18px 30px;
+            border-left: 5px solid #e9d900;
+            background: $white;
+            font-size: 1.2em;
+            line-height: 26px;
+            color: $black;
+            font-style:italic;
+        }
+    }
+    .descripcion {
+        //  border: 1px solid red;
+        &__title {
+            font-family: $oswaldm;
+            font-size: 1.5em;
+            margin: 10px 0px;
+        }
+        &__list {
+            //  border: 1px solid red;
+            list-style: circle;
+            padding-left: 20px;
+            li {
+                font-family: $robotol;
+                position: relative;
+                padding: 0 0 0 0px;
+                margin:20px;
+                line-height: 25px;
+                color: #222222; //border: 1px solid red !important;
+               // font-size: .9em;
+                span{
+                 font-size: 1.2em; 
+                 font-weight:bold; 
+                 
+                }
+                p{
+                    font-size: 1.2em;   
+                }
+            }
+        }
+    }
+}
+
+
+
+.card {
+ 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+ 
+    .card-body {
+        padding: 10px 20px;
+    }
+    @include desde($large) {
+        display: block;
+    }
+    .card-title {
+        font-family: $robotob;
+        font-size:1.2em;
+        padding-bottom: 10px;
+    }
+    .card-text {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        font-family: $robotol;
+        line-height: 1.2;
+    }
+    .card-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+        border-radius: 5px;
+        line-height: 2;
+        font-family: $robotob;
+        .icon-tcard {
+          margin-right:5px;
+          font-style:normal;
+        }
+    }
+}
+
+.service-bottom {
+    width: 100%;
+    background: $yellow;
+    overflow: hidden; //  border-top:5px solid $white;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 0px;
+        @include desde($x-small) {
+            flex-direction: column;
+        }
+        @include desde($small) {
+            flex-direction: row;
+        }
+        &__content1 {
+            @include desde($x-small) {
+                margin-bottom: 20px;
+            }
+            @include desde($small) {
+                margin-bottom: 0px;
+            }
+            &__title {
+                font-family: $robotob;
+                font-size: 1.2em;
+                color: $black;
+               // padding-left: 5px;
+                @include desde($x-small) {
+                    padding-left: 0px;
+                }
+                @include desde($small) {
+                    //padding-left: 5px;
+                }
+            }
+        }
+        &__content2 {
+            &__button {
+                font-family: $robotob;
+                font-size: 1.2em;
+                padding: 10px 0px 10px 10px;       
+                .icon-bottom {
+                    font-size: 1em;
+                    position: relative;
+                    top: 4px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+/* GALLERY */
+
+
+
+.bgalery {
+    border: none !important;
+    color: $white !important;
+}
+
+.bgalery:hover {
+    color: $yellow !important;
+}
+
+.gallery-title {
+  font-family:$robotob;
+    font-size: 1.2em;
+    color: $blue;
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    bottom:50px;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.filter-button {
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    color: $white;
+    margin:5px;
+
+}
+
+
+.btn-default:active .filter-button:active {
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 30px;
+}
+
+.products-lineas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.products-lineas>div {
+
+    @include desde($mediun) {
+        width: 48% !important;
+        margin: 2px auto;
+    }
+    @include desde($large) {
+      width: 30% !important;
+    
+  }
+}
+
+.info-nav {
+    @include desde($large) {
+        padding: 0px;
+
+    }
+}

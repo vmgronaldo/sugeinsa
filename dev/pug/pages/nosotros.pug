@@ -1,0 +1,79 @@
+extends ../includes/template
+append config
+    -pageTitle = 'Nosotros'
+    -description = 'Una impresionante descripcion para esta página'
+    -currentPage = 'nosotros'
+block main  
+  div.main-nosotros
+    section.main-nosotros__content1
+      div(class="main-nosotros__content1__item1")
+        h1(class="main-nosotros__content1__item1__title l-container bounce-top") Nosotros
+      div(class="main-nosotros__content1__item2 l-container")
+        img(class="main-nosotros__content1__item2__img l-container bounce-left" src="img/categorias/imgabout.svg" type="image/svg+xml" alt="Sobre Nosotros" title="Sobre Nosotros")
+        div(class="main-nosotros__content1__item2__text l-container bounce-right")
+          p Somos una Empresa innovadora y eficiente especializada en la comercialización de productos tecnológicos como computadoras , laptos , servidores , proyectores , monitores , impresoras , suministros , acesorios y más.
+          p Contamos con un amplio stock permanente y variedad de productos con las mejoras marcas en nuestras tiendas,asegurando a los clientes que compran en <strong>SUGEINSA</strong> es tener la mejor garantía y post-venta.
+          p Los años de experiencia y dedicación se ve reflejado en su equipo humano, en la calidad de sus productos,como del servicio prestado a nuestros clientes.
+          p Así mismo brindamos Servicio Técnico contando con el respaldo de todas las marcas como tambien tenemos a su disposición un completo stock de productos con garantía total.
+   
+    section.main-nosotros__content2
+      div(class="main-nosotros__content2__item1 l-container")
+        div(class="main-nosotros__content2__item1__video slide-left")
+          img(src="img/mision-y-vision.jpg" width="400px" alt="Mision y Vision Sugeinsa" title="Mision y Vision Sugeinsa")
+        div.main-nosotros__content2__item1__text
+          h3 Misión
+          h5(class="slide-right") Ser reconocidos como una empresa de prestigio por su calidad de atencion con responsabilidad y honestidad en nuestro servicio de ventas.
+          h3 Visión
+          h5(class="slide-right") Ser la principal empresa lider en el rubro de suministros generales, aportar día a día nuestra esmerada asesoría técnica y con ello fortalecer el sector industrial.
+     
+      div(class="main-nosotros__content2__item2 l-container")
+        div(class="main-nosotros__content2__item2__img slide-right")
+          img(src="img/valores-sugeinsa.jpg" alt="Valores Sugeinsa" title="Valores Sugeinsa")
+        div(class="main-nosotros__content2__item2__text")
+          h3(class="fade-in") Valores
+          h4 Innovación:
+          p(class="slide-left") Buscar nuevas formas de sorprender a nuestros clientes. Ser innovador es: Ir más allá de las expectativas de mi cliente. Ser creativo en la búsqueda de soluciones Preguntarme cómo podría hacer las cosas, diferente. Compartir mis ideas con mi equipo. Tomar la iniciativa.
+          h4 Compromiso:
+          p(class="slide-left") Buscamos hacer de la relacíon con nustro cliente , un fuerte vínculo de gran confianza, que se sustente en un solo principio: clientes satisfechos.
+          h4 Seguridad:
+          p(class="slide-left") de recibir siempre la respuesta inmediata a sus necesidades.
+
+    section(class="main-nosotros__content3 l-container")
+      div(class="ih-item circle  effect1 bounce-right")
+        a(href="#a")
+          div.spinner
+          div.img
+              img(class="svg"  src="img/about/precio.svg" type="image/svg+xml")
+          .info
+            div.info-back
+              h3 85%
+              p CALIDAD
+      div(class="ih-item circle  effect1 bounce-right")
+        a(href="#a")
+          div.spinner
+          div.img
+              img(class="svg" src="img/about/compe.svg" type="image/svg+xml")
+          .info
+            div.info-back
+              h3 98%
+              p BUEN PRECIO
+      div(class="ih-item circle  effect1 bounce-left")
+        a(href="#a")
+          div.spinner
+          div.img
+              img( class="svg" src="img/about/postventa.svg" type="image/svg+xml")
+          .info
+            div.info-back
+              h3 90%
+              p POSVENTA
+      div(class="ih-item circle  effect1 bounce-left")
+        a(href="#a")
+          div.spinner
+          div.img
+              img( class="svg" src="img/about/servicio.svg" type="image/svg+xml")
+          .info
+            div.info-back
+              h3 75%
+              p SERVICIOS COMERCIALES
+  include ../blocks/linkcontacto.pug               
+

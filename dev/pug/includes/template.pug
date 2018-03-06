@@ -1,0 +1,109 @@
+block config
+  include ../config/config.pug
+
+doctype html
+html(lang="es")
+  head
+    title #{pageTitle} | #{siteTitle}
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name='description' content=description)
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    script(src="js/jquery-2.2.4.min.js")
+    script(src="js/baguetteBox.min.js")
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    script(src="js/bootstrap.min.js")
+    link(rel="stylesheet" href="css/styles.css")
+    link(rel="stylesheet" href="css/ihover.css")
+    link(rel="stylesheet" href="css/baguetteBox.min.css")
+    link(rel="stylesheet" href="css/sweetalert.css")
+  body 
+    .headtop
+      .l-container  
+        .info__head
+          .info__head__contact
+            
+            span  
+              i(class="icon icon-phone")  
+            span (01) 237- 4491 
+            span 
+               i(class="icon icon-mail") 
+            span ventas@sugeinsa.com.pe 
+            span 
+               i(class="icon icon-map-marker")
+            span Jr. Camana 1043 Oficina 404 Lima
+          
+          .info__head__social
+            a( href='google.com') 
+              i(class="icon icon-facebook")
+            a( href='google.com') 
+              i(class="icon icon-envelope")
+    if currentPage != 'inicio'
+      header(class="main-header opacidad")
+        .l-container
+          .head__header 
+            a( href='/' id='content-logo')
+
+                img(class="logo" src="img/categorias/logo.svg" type="image/svg+xml")
+            nav( class='main-nav' id='main-nav') 
+                div( class='togle' id='toggle-menu')             
+                  i( class="icon-bars")  
+                include ../blocks/menu.pug  
+    else 
+      header(class="main-header ")
+        .l-container
+          .head__header 
+            a( href='/' id='content-logo')
+
+                img(class="logo" src="img/categorias/logo.svg" type="image/svg+xml")
+            nav( class='main-nav' id='main-nav') 
+                div( class='togle' id='toggle-menu')             
+                  i( class="icon-bars")  
+                include ../blocks/menu.pug  
+    block main
+
+    footer.main-footer  
+      div(class="main-footer__content l-container")
+        div.main-footer__content__info
+          span(class="main-footer__content__info__title") INFORMACION
+
+          p.main-footer__content__info__text Conoce a nuestra empresa orientada a proveer soluciones en abastecimiento en el rubro industrial, minero , medico , agricultor, petrolero , tecnológico y más.
+          a(class="main-footer__content__info__link" href="/")
+            img(src="img/categorias/logo.svg" type="image/svg+xml")
+
+        div.main-footer__content__contact
+          span.main-footer__content__contact__title CONTACTANOS
+
+          ul.main-footer__content__contact__list
+            li Necesitas Ayuda?
+            li (01) 237-4491
+            li e-mail: ventas@sugeinsa.com.pe
+            li Lunes - Viernes 8.00 am - 21:00 pm hrs
+        div.main-footer__content__facebook 
+          span.main-footer__content__facebook__title FACEBOOK
+          div(class="column dt-sc-one-fourth first")
+            aside(id="ultimatefacebookpageplugin-3" class="widget widget_ultimatefacebookpageplugin")
+              script
+                include facebooksdk.js
+              div(class="fb-page fb_iframe_widget" data-href="https://business.facebook.com/Sugeinsa" data-width="400" data-height="230"
+                              data-small-header="true" data-adapt-container-width="" data-hide-cover="false" data-show-facepile="true"
+                              data-show-posts="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=273&amp;height=230&amp;hide_cover=false&amp;href=https%3A%2F%2Fbusiness.facebook.com%2FSugeinsa&amp;locale=es_ES&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=true&amp;width=400")
+                span(style="vertical-align: bottom; width: 273px; height: 230px;")
+                  iframe(name="f9cf0a410c705" width="400px" height="230px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df18d32d537ae964%26domain%3Dwww.sugeinsa.com.pe%26origin%3Dhttp%253A%252F%252Fwww.sugeinsa.com.pe%252Ff317a21913d0dcc%26relation%3Dparent.parent&amp;container_width=400&amp;height=230&amp;hide_cover=false&amp;href=https%3A%2F%2Fbusiness.facebook.com%2FSugeinsa&amp;locale=es_ES&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=true&amp;width=400" style="border: none; visibility: visible; width: 400px; height: 230px;")
+              div(style="font-size: 9px; color: #808080; font-weight: normal; font-family: tahoma,verdana,arial,sans-serif; line-height: 1.28; text-align: right; direction: ltr;")
+      div.copy
+        p(class="text l-container") © 2012 - 2017 Sugeinsa S.A - Todos los derechos reservados. - Powered by Gabriel Viza
+   
+    script(src="js/angular.min.js")
+    script(src="js/jquery.easing.js")
+    script(src="js/waypoints.min.js")
+    script(src="js/counterup.min.js")
+    script(src="js/jquery.scrollUp.js")
+    script(src="js/sweetalert.min.js")
+    script(src="js/ajax.js")
+    script(src="js/scripts.js")
+
+ 
+   
+
