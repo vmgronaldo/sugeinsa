@@ -1,6 +1,25 @@
 // Este es un ejemplo de como exportar funciones desde un archivo
 // En index.js se importan estas funciones
 
+var URLhash = window.location.hash;
+console.log(URLhash);
+
+$(".list-group-item ").each(function(){
+  var idtabs =$(this).attr('id');
+  if(URLhash ===  idtabs){
+    console.log("true");
+    $(".list-group-item").removeClass("active");
+  }else{
+    console.log("false");
+    $(".list-group-item").removeClass("active");
+  }
+  console.log($(this).attr('id'));
+});
+
+
+
+
+
 export const toogle = () => {
   $("#toggle-menu").click(function () {
     $("#oculto").slideToggle(1000);

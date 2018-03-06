@@ -17,6 +17,21 @@ Object.defineProperty(exports, "__esModule", {
 // Este es un ejemplo de como exportar funciones desde un archivo
 // En index.js se importan estas funciones
 
+var URLhash = window.location.hash;
+console.log(URLhash);
+
+$(".list-group-item").each(function () {
+  var idtabs = $(this).attr('id');
+  if (URLhash === idtabs) {
+    console.log("true");
+  } else {
+    console.log("false");
+  
+  }
+
+});
+
+
 var toogle = exports.toogle = function toogle() {
   $("#toggle-menu").click(function () {
     $("#oculto").slideToggle(1000);
