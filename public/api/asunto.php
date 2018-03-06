@@ -7,11 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="../js/jquery-2.2.4.min.js"></script>
-<link rel="stylesheet" href="../css/sweetalert.css">
-<script src="../js/sweetalert.min.js"></script>
-<title>Formulario</title> <!-- Aquí va el título de la página -->
+<meta http-equiv="Content-Type" content="text/plain; charset=UTF-8" />
 
 </head>
 
@@ -77,7 +73,7 @@ if ($nombre == '' || $email == '' || $asunto == '' || $mensaje == '') {
     //Password to use for SMTP authentication
   $mail->Password = "ronaldoviza123";
 
-
+  $mail->CharSet = 'UTF-8';
   if ($mail->Send())
   echo "1";
   else

@@ -7,9 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<title>Formulario</title> <!-- Aquí va el título de la página -->
+<meta http-equiv="Content-Type" content="text/plain; charset=UTF-8" />
 
 </head>
 
@@ -76,7 +74,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     //Password to use for SMTP authentication
     $mail->Password = "ronaldoviza123";
 
-    
+// Activo condificacción utf-8
+    $mail->CharSet = 'UTF-8';
     if ($mail->Send())
     echo "1";
     else
