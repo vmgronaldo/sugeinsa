@@ -10,12 +10,12 @@
 
 #SliderPrincipal {
     position: relative;
-    top: -2px; // transform: skewY(0deg);
+    top: -2px; 
+    // transform: skewY(0deg);
     // -webkit-transform: skewY(0deg);
     @include desde($large) {
         position: relative;
         top: -120px;
-        z-index: 10; // transform: skewY(-1deg);
         //-webkit-transform:skewY(-1deg);
     }
 }

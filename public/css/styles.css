@@ -709,7 +709,7 @@ summary{
   top:0;
   background:#28303b;
   opacity:1;
-  z-index:5;
+  z-index:4;
 }
 
 .headtop .info__head{
@@ -817,19 +817,12 @@ summary{
 .main-header{
   background:#28303b;
   position:relative;
-  top:-1px !important;
-  z-index:7 !important;
+  z-index:6 !important;
 }
 
 @media screen and (min-width:1024px){
   .main-header{
     height:80px;
-  }
-}
-
-@media screen and (min-width:1300px){
-  .main-header{
-    top:0 !important;
     opacity:.9;
   }
 }
@@ -1012,7 +1005,6 @@ summary{
   #SliderPrincipal{
     position:relative;
     top:-120px;
-    z-index:3;
   }
 }
 
@@ -1028,7 +1020,7 @@ summary{
 }
 
 .carousel-control{
-  z-index:9;
+  z-index:8;
   background-image:none !important;
   transition:all 1s;
 }
@@ -1228,7 +1220,7 @@ summary{
   bottom:25px;
   background:#fff;
   box-shadow:0 5px 10px 0 #d4d0d4;
-  z-index:5;
+  z-index:4;
   border-radius:5px;
 }
 
@@ -1552,7 +1544,7 @@ summary{
   font-family:robotbold;
   font-size:1em;
   color:#28303b;
-  z-index:8;
+  z-index:7;
 }
 
 .main-catalog{
@@ -2500,7 +2492,7 @@ hr{
   margin:20px 10px 0;
   position:relative;
   transition:all .25s;
-  z-index:4;
+  z-index:3;
 }
 
 @media screen and (min-width:1024px){
@@ -2544,7 +2536,7 @@ hr{
   text-decoration:none;
   font-family:oswaldm;
   color:#fff;
-  z-index:6;
+  z-index:5;
   transition:all .25s;
 }
 

@@ -69,15 +69,13 @@
 .main-header {
     background: $blue;
     position: relative;
-    top: -1px !important;
     z-index: 999999999999 !important;
     @include desde($large) {
-        height: 80px;
+      height: 80px;
+      opacity: 0.9;
+   
     }
-    @include desde($x-large) {
-        top: 0px !important;
-        opacity: 0.9;
-    }
+ 
     .l-container {
         .head__header {
             @include desde($large) {

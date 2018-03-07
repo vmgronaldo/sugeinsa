@@ -20,17 +20,17 @@ Object.defineProperty(exports, "__esModule", {
 var URLhash = window.location.hash;
 console.log(URLhash);
 
-$(".list-group-item").each(function () {
+$(".list-group-item ").each(function () {
   var idtabs = $(this).attr('id');
   if (URLhash === idtabs) {
     console.log("true");
+    $(".list-group-item").removeClass("active");
   } else {
     console.log("false");
-  
+    $(".list-group-item").removeClass("active");
   }
-
+  console.log($(this).attr('id'));
 });
-
 
 var toogle = exports.toogle = function toogle() {
   $("#toggle-menu").click(function () {
