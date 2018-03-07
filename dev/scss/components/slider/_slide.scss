@@ -33,22 +33,9 @@
     z-index: 9999999999999999999;
     background-image: none !important;
     transition: all 1s;
+    width: 5%;
     
 }
-
-@include desde($large) {
-
-    .left{
-      left: 60px;
-
-    }
-    .right{
-      right: 30px !important;
-    }
-
-
-}
-
 
 .carousel-control :hover {
     transform: scale(2);

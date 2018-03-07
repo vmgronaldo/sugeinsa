@@ -1023,15 +1023,7 @@ summary{
   z-index:8;
   background-image:none !important;
   transition:all 1s;
-}
-
-@media screen and (min-width:1024px){
-  .left{
-    left:60px;
-  }
-  .right{
-    right:30px !important;
-  }
+  width:5%;
 }
 
 .carousel-control :hover{
