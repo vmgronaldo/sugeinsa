@@ -2215,6 +2215,15 @@ hr{
   line-height:1.2;
 }
 
+.main-contact .container-fluid .aviso{
+  font-size:1.1em;
+}
+
+.main-contact .container-fluid .aviso a{
+  cursor:pointer;
+  color:#fff;
+}
+
 .main-contact .container-fluid .content-2-cotizacion{
   background-color:#28303b;
   width:100%;
@@ -2441,6 +2450,25 @@ hr{
 
 .c1,.c2{
   padding:0;
+}
+
+.modal-dialog .modal-content .modal-header{
+  border:none;
+  background:#fed443;
+}
+
+.modal-dialog .modal-content .modal-header .modal-title{
+  font-family:robotbold;
+  font-size:1.5em;
+}
+
+.modal-dialog .modal-content .modal-header .modal-title button{
+  margin:0 5px;
+  font-size:1.2em;
+}
+
+.modal-dialog .modal-content .modal-body{
+  background:#f2f2f2;
 }
 
 .main-nosotros__content2{

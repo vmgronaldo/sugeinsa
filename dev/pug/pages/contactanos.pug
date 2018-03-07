@@ -41,8 +41,9 @@ block main
               input(type="text" name="celular" id="celular" placeholder="Numero Celular" required)
               input(type="text" name="email" id="email"  placeholder="E-mail" required)
               input(type="file" class="file " name="adjunto" id="adjunto")
-              p.nota puede enviar su lista de productos a cotizar (.docx,.csv,xlsx,pdf)
-              button(id="btnCotizar" type="submit" class="btnCotizacion button tercer") ENVIAR
+              p.aviso 
+                a(data-toggle="modal" data-target="#myModal") Leer Requisitos (aquí)
+              button(id="btnCotizar" type="submit" class="btnCotizacion button tercer") ENVIAR             
       div(class="row form-contact")
         h1(class="form-contact__title fade-in") Contactenos
         div(class="form-contact__text col-md-12 fade-in")
@@ -64,12 +65,44 @@ block main
         div(class="form-contact__content2 col-md-7 col-xs-12 slide-right")
           h4.form-contact__content2__title Formulario de Contactenos
           form(id="frmContacto" data-toggle="validator" role="form" action="api/asunto.php" method="post" name="frmContacto" enctype="multipart/form-data")
-            input(class="col-md-4" type="text" name="nombre" id="nombre" placeholder="Nombre" required)
-            input(class="col-md-4" type="text" name="email" id="email" placeholder="E-Mail" required)
+            input(class="col-md-4" type="text" name="nombre2" id="nombre2" placeholder="Nombre" required)
+            input(class="col-md-4" type="text" name="email2" id="email2" placeholder="E-Mail" required)
             input(class="col-md-4" type="text" name="asunto" id="asunto" placeholder="Asunto" required)
             textarea(class="col-md-12" name="mensaje" id="mensaje" cols="30" rows="50" height="50px" placeholder="Mensaje" required)
             button(type="submit" class="btnCotizacion button contact") ENVIAR
     .content-map
       .content-map__item
         iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7803.724498574184!2d-77.03928072147691!3d-12.052997461528923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe52b4d9a463c3dd1!2sSUGEINSA!5e0!3m2!1ses-419!2spe!4v1518633404012" allowfullscreen)
+  
+    div(class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+      div(class="modal-dialog" role="document")
+        div(class="modal-content")
+          div(class="modal-header")
+            h1(class="modal-title" id="exampleModalLabel") INFORMACION : 
+              button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                span(aria-hidden="true") &times;
+          div(class="modal-body")
+            blockquote informacion
+            b Antes de Subir su archivo tener en encuenta:
+            p extesion de archivo valido
+             ul
+              li .txt
+              li .doc
+              li .docx
+              li .xlsx
+              li .csv
+              li .pdf
+              li .png
+              li .jpg
+              li .jpeg
+            p peso de archivo valido
+             ul
+              li 2 MB
+            blockquote Nota:si en caso no cumpla los requisitos el formulario enviara un error.
+              
+            
+ 
+     
+
+  
   <!-- Conacto Inicio-->

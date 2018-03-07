@@ -90,7 +90,16 @@
                 padding-left: 15px;
                 line-height: 1.2;
             }
+         
         }
+             .aviso{
+               font-size:1.1em;
+                a{
+                cursor:pointer;
+                color:$white;
+                }
+            }
+      
         .content-2-cotizacion {
             background-color: $blue;
             width: 100%;
@@ -300,3 +309,41 @@
   padding: 0px;
   
 }
+
+//MODAL 
+.modal-dialog{
+    .modal-content{
+       .modal-header{
+           border:none ;
+         background:$yellow; 
+           .modal-title{
+               font-family:$robotob;
+               font-size:1.5em;           
+               button{
+                    margin: 0px 5px;
+                    font-size:1.2em;
+ 
+               }
+           }
+       }
+       .modal-body{
+            background:$whiteo; 
+        blockquote{
+
+        }
+        b{
+
+        }
+        p{
+
+        }
+        ul{
+            li{
+
+            }
+        }
+       }
+    }
+
+}
+
