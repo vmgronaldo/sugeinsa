@@ -20,8 +20,8 @@
         .item {
             border: 1px solid black;
             width: 300px;
-            height: 420px;
-            padding: 30px 35px;
+            height: 400px;
+            padding: 20px;
             text-align: center;
             border-radius: 5px;
             border: 1px solid #dbdbdb;
@@ -29,6 +29,11 @@
             position: relative;
             transition: all .25s;
             z-index: 99999;
+
+            @include desde($small) {
+              height: 420px;
+              padding: 30px 35px;
+          }
    
             &:hover  {
                 background: rgba(40, 48, 59,.7);
@@ -85,8 +90,10 @@
                 }
             }
             .bottom {
-              margin: 15px 20px;
-
+              margin-top: 5px;
+              @include desde($small) {
+                margin: 15px 20px;
+            }
                 .name ,
                 .date{
                     font-family: $robotob;

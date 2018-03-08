@@ -2486,8 +2486,8 @@ hr{
 .main-nosotros__content2 .item{
   border:1px solid #000;
   width:300px;
-  height:420px;
-  padding:30px 35px;
+  height:400px;
+  padding:20px;
   text-align:center;
   border-radius:5px;
   border:1px solid #dbdbdb;
@@ -2495,6 +2495,13 @@ hr{
   position:relative;
   transition:all .25s;
   z-index:3;
+}
+
+@media screen and (min-width:480px){
+  .main-nosotros__content2 .item{
+    height:420px;
+    padding:30px 35px;
+  }
 }
 
 .main-nosotros__content2 .item:hover{
@@ -2556,7 +2563,13 @@ hr{
 }
 
 .main-nosotros__content2 .item .bottom{
-  margin:15px 20px;
+  margin-top:5px;
+}
+
+@media screen and (min-width:480px){
+  .main-nosotros__content2 .item .bottom{
+    margin:15px 20px;
+  }
 }
 
 .main-nosotros__content2 .item .bottom .date,.main-nosotros__content2 .item .bottom .name{
