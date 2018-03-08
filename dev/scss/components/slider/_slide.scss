@@ -11,6 +11,7 @@
 #SliderPrincipal {
     position: relative;
     top: -2px; 
+    z-index: 2;
     // transform: skewY(0deg);
     // -webkit-transform: skewY(0deg);
     @include desde($large) {
