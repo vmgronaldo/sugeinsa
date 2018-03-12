@@ -48,15 +48,14 @@ html(lang="es")
             span ventas@sugeinsa.com.pe 
             span 
                i(class="icon icon-map-marker")
-            span Jr. Camana 1043 Oficina 404 Lima
-          
+            span Jr. Camana 1043 Oficina 404 Lima       
           .info__head__social
             a( target="__blank" href='https://www.facebook.com/Sugeinsa/' title="Facebook Sugeinsa") 
               i(class="icon icon-facebook")
             a( target="__blank" href='https://www.facebook.com/Sugeinsa/' title="Facebook Sugeinsa") 
               i(class="icon icon-envelope")
     if currentPage != 'inicio'
-      header(class="main-header opacidad")
+      header(class="main-header opacidad" )
         .l-container
           .head__header 
             a( href='/' id='content-logo' title="Inicio")
@@ -119,6 +118,8 @@ html(lang="es")
     script(src="js/nprogress.min.js")
     script(src="js/ajax.min.js")
     script(src="js/scripts.min.js")
+    script
+      include ../blocks/service.js   
 
  
    
