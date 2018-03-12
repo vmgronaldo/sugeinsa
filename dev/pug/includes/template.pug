@@ -25,6 +25,18 @@ html(lang="es")
     meta(name='Classification' content="Industria,Ferreteria,Abastecimiento,Mantenimiento,Servicios,Tecnologia")
     meta(name='keywords' content=palabrasClaves)
     link(rel="icon" type="image/x-icon" href="favicon.ico")
+
+    link(rel="manifest" href="manifest.json")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+    meta(name="apple-mobile-web-app-title" content="Sugeinsa App")
+    link(rel="apple-touch-icon" href="img/icons/icon-152x152.png")
+    meta(name="msapplication-TileImage" content="img/icons/icon-144x144.png")
+    meta(name="msapplication-TileColor" content="#2F3BA2")
+
+    meta(name="msapplication-TileImage" content="img/icons/icon-144x144.png")
+    meta(name="msapplication-TileColor" content="#2F3BA2")
+
     script(src="js/jquery-2.2.4.min.js" )
     script(src="js/baguetteBox.min.js" )
     link(rel="stylesheet" href="css/bootstrap.min.css")
@@ -34,6 +46,7 @@ html(lang="es")
     link(rel="stylesheet" href="css/baguetteBox.min.css")
     link(rel="stylesheet" href="css/sweetalert.css")
     link(rel="stylesheet" href="css/nprogress.min.css")
+    link(rel="stylesheet" href="css/offline.css")
   body 
     .headtop
       .l-container  
@@ -118,6 +131,7 @@ html(lang="es")
     script(src="js/nprogress.min.js")
     script(src="js/ajax.min.js")
     script(src="js/scripts.min.js")
+    script(src="js/offline.min.js")
     script
       include ../blocks/service.js   
 

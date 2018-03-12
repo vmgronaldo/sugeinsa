@@ -26,3 +26,32 @@ if ('serviceWorker' in navigator) {
     ga('create', 'UA-59325548-2', 'auto');
     ga('send', 'pageview');
 
+
+  
+    Offline.on('up', function () {
+      swal({
+      position: 'center',
+      type: 'success',
+      title: 'Verificacion Conexion a Internet',
+      text: "¡Conexion Establecida Gracias!",
+      showConfirmButton: false,
+      animation: true,
+      customClass: 'bounceOut',
+      timer: 4500
+    })
+
+    });
+    Offline.on('down', function () {
+      swal({
+      position: 'center',
+      type: 'error',
+      title: 'Verificacion Conexion a Internet',
+      text: "¡Problemas con su Red , Verifique su conexion Gracias!",
+      showConfirmButton: false,
+      animation: true,
+      customClass: 'bounceOut',
+      timer: 4500
+    })
+    });
+
+
