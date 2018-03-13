@@ -36,8 +36,6 @@ hr{
     text-align: center;
     max-width: 800px;
     margin: 25px auto;
-    color: #888;
-
     padding:40px 0px 0px 0px;
 
 
@@ -46,7 +44,7 @@ hr{
     padding: 20px 0px ;
     font-family: $robotol;
     font-size: 1.2em;
-    color:$categorycolor;
+    color: $black;
 }
 .tz-gallery {
     @include desde($large) {

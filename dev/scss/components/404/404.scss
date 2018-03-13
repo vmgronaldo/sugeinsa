@@ -1,0 +1,13 @@
+.main-error {
+    text-align: center;
+    img {
+        width: 100%;
+    }
+    a {
+        position: relative;
+        top: -20px;
+        @include desde($large) {
+          top: -100px;
+        }
+    }
+}

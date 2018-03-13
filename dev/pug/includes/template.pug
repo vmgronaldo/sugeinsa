@@ -32,21 +32,17 @@ html(lang="es")
     meta(name="apple-mobile-web-app-title" content="Sugeinsa App")
     link(rel="apple-touch-icon" href="img/icons/icon-152x152.png")
     meta(name="msapplication-TileImage" content="img/icons/icon-144x144.png")
-    meta(name="msapplication-TileColor" content="#2F3BA2")
-
+    meta(name="theme-color" content="#2F3BA2")
     meta(name="msapplication-TileImage" content="img/icons/icon-144x144.png")
     meta(name="msapplication-TileColor" content="#2F3BA2")
-
     script(src="js/jquery-2.2.4.min.js" )
-    script(src="js/baguetteBox.min.js" )
     link(rel="stylesheet" href="css/bootstrap.min.css")
     script(src="js/bootstrap.min.js")
-    link(rel="stylesheet" href="css/styles.css")
+    link(rel="stylesheet" href="css/styles.min.css?v=1.2")
     link(rel="stylesheet" href="css/ihover.css")
-    link(rel="stylesheet" href="css/baguetteBox.min.css")
-    link(rel="stylesheet" href="css/sweetalert.css")
+    link(rel="stylesheet" href="css/sweetalert.min.css")
     link(rel="stylesheet" href="css/nprogress.min.css")
-    link(rel="stylesheet" href="css/offline.css")
+
   body 
     .headtop
       .l-container  
@@ -71,7 +67,7 @@ html(lang="es")
       header(class="main-header opacidad" )
         .l-container
           .head__header 
-            a( href='/' id='content-logo' title="Inicio")
+            a( href='/' id='content-logo' title="Inicio" accesskey="I")
                 img(class="logo" src="img/categorias/logo.svg" type="image/svg+xml" title="Inicio")
             nav( class='main-nav' id='main-nav') 
                 div( class='togle' id='toggle-menu')             
@@ -130,7 +126,7 @@ html(lang="es")
     script(src="js/sweetalert.min.js")
     script(src="js/nprogress.min.js")
     script(src="js/ajax.min.js")
-    script(src="js/scripts.min.js")
+    script(src="js/scripts.min.js?v=1.0.2")
     script(src="js/offline.min.js")
     script
       include ../blocks/service.js   

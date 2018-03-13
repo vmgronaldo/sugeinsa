@@ -1,5 +1,7 @@
 .main-nosotros {
     background: $white;
+    z-index: 10;
+    position: relative;
     .main-nosotros__content1 {
         &__item1 {
             width: 100%;

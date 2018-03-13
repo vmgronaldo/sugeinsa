@@ -14,24 +14,6 @@ var _example = require("./modules/example");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-// Este es un ejemplo de como exportar funciones desde un archivo
-// En index.js se importan estas funciones
-
-var URLhash = window.location.hash;
-console.log(URLhash);
-
-$(".list-group-item ").each(function () {
-  var idtabs = $(this).attr('id');
-  if (URLhash === idtabs) {
-    console.log("true");
-    $(".list-group-item").removeClass("active");
-  } else {
-    console.log("false");
-    $(".list-group-item").removeClass("active");
-  }
-  console.log($(this).attr('id'));
-});
-
 var toogle = exports.toogle = function toogle() {
   $("#toggle-menu").click(function () {
     $("#oculto").slideToggle(1000);
@@ -84,7 +66,7 @@ var listo = exports.listo = function listo() {
     /*
     Lineas Sliders
     */
-    baguetteBox.run('.tz-gallery');
+
     $('.counter').counterUp({
       delay: 10,
       time: 1000

@@ -42,7 +42,7 @@
         &__items {
           border-radius: .25rem;
             background: $white;
-            height: 350px;
+            height: 360px;
             cursor: pointer;
             padding: 40px;
             margin: 20px 0px;
@@ -52,12 +52,9 @@
             @include desde($mediun) {
                 width: calc(50% - 1em);
             }
+     
             @include desde($x-large) {
-              padding: 40px 10px;
-         
-            } 
-            @include desde($x-large) {
-                padding: 40px 30px;
+                padding: 40px 25px;
                 width: calc(32% - .2em);
                 margin: 10px 5px;
             } 
@@ -94,21 +91,28 @@
                 }
             }
             &__title {
-                font-size: 1.2em;
+                font-size: 1.4em;
                 font-family: $oswaldm;
+                color:$blue;
       
         
             }
             &__text {
                 font-family: $robotol;
+                font-weight: 300;
                 margin: 20px 0px;
                 font-size: 1em;
-                color: $categorycolor;
+                color: $black;
            
                 @include desde($mediun) {
-                    margin: 10px 0px;
+                    margin: 25px 0px;
                     height: 120px;
+                    font-size: 1.1em;
                 }
+                @include desde($large) {
+                  margin: 10px 0px;
+              
+              }
              
             }
             &__button {

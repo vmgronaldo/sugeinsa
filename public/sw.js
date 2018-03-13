@@ -11,14 +11,12 @@ self.addEventListener('install', e => {
                   `lineas.html?timestamp=${timeStamp}`,
                   `nosotros.html?timestamp=${timeStamp}`,
 
-                  `css/baguetteBox.min.css?timestamp=${timeStamp}`,
                   `css/bootstrap.min.css?timestamp=${timeStamp}`,
                   `css/ihover.css?timestamp=${timeStamp}`,
                   `css/nprogress.min.css?timestamp=${timeStamp}`,
                   `css/styles.css?timestamp=${timeStamp}`,
                   `css/sweetalert.css?timestamp=${timeStamp}`,
 
-                  `js/baguetteBox.min.js?timestamp=${timeStamp}`,
                   `js/bootstrap.min.js?timestamp=${timeStamp}`,
                   `js/angular.min.js?timestamp=${timeStamp}`,
                   `js/waypoints.min.js?timestamp=${timeStamp}`,
