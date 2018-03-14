@@ -159,12 +159,13 @@
                 }
                 select {}
                 .btnCotizacion {
-                    border: none;
                     width: auto;
                     height: 50px;
-                    padding: 10px 40px;
-                    font-family: $oswaldm;
+                    padding: 10px 30px;
+                    font-family: $robotob;
                     font-size: 1em;
+                    letter-spacing: 2px;
+                 
                 }
             }
         } ///FORM CONTACTO
@@ -274,12 +275,12 @@
                         height: 100px !important;
                     }
                     .btnCotizacion {
-                        border: none;
-                        width: auto;
-                        height: 50px;
-                        padding: 10px 40px;
-                        font-family: $oswaldm;
-                        font-size: 1em;
+                      width: auto;
+                    height: 50px;
+                    padding: 10px 30px;
+                    font-family: $robotob;
+                    font-size: 1em;
+                    letter-spacing: 2px;
                     }
                 }
             }

@@ -46,7 +46,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->Subject  =  "Cotizador Sugeinsa"."-".$categoria;
     $mail->Body     ="<img src='logo.png' alt=''><h1>Hola mundo</h1> \n<br />"  . "Nombre: $nombre \n<br />".    
     "Correo: $email \n<br />".
-    "Asunto: $celular \n<br />".
+    "Celular: $celular \n<br />".
     "Categoria: $categoria \n<br />";
     $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
 

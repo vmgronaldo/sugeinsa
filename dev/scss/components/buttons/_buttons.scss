@@ -1,32 +1,38 @@
 .button {
     color: $white;
     font-size: 1.8em;
-    transition: all 1s;
+    transition: all .25s;
     &.primary {
         background: $yellow;
         &:hover {
             background: $blue;
             color: $yellow;
-            transition: all 1s;
+            transition: all .25s;
             text-decoration: none;
         }
     }
     &.secondary {
-        background: $blue;
+        background: transparent;
+        color: $black;
+        border:1px solid $black;
+        border-radius: 3px;
         &:hover {
             background: $black;
             color: $yellow;
-            transition: all 1s;
+            transition: all .25s;           
             text-decoration: none;
         }
     }
     &.tercer {
-        background: $yellow;
-        color: $black;
+      background: transparent;
+
+        border:1px solid $yellow;
+        color: $white;
+        border-radius: 3px;
         &:hover {
             background: $black;
             color: $yellow;
-            transition: all 1s;
+            transition: all .25s;
             text-decoration: none;
         }
     }
@@ -36,7 +42,7 @@
         &:hover {
             background: $yellow;
             color: $black;
-            transition: all 1s;
+            transition: all .25s;
             text-decoration: none;
         }
     }

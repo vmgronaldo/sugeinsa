@@ -45,7 +45,7 @@
             height: 360px;
             cursor: pointer;
             padding: 40px;
-            margin: 20px 0px;
+            margin: 20px 0px 0px 0px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: all 1s;
@@ -116,15 +116,12 @@
              
             }
             &__button {
-                color: $yellow !important;
-                border: none;
+   
                 width: auto;
                 height: 200px;
                 padding: 10px 40px;
                 font-family: $robotob;
                 font-size: 1em;
-
-                color: $blue;
                 z-index:99999999999999;
          
          

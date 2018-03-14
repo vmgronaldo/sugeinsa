@@ -1,23 +1,19 @@
-#scrollUp{
-	bottom: 20px;
-	right: 0px;
-	width: 50px;
-	height: 50px;
-	background: url('../img/top.png') no-repeat;
-
-
+#scrollUp {
+    bottom: 20px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background: url('../img/top.png') no-repeat;
 }
 
 #SliderPrincipal {
     position: relative;
-    top: -2px; 
-    z-index: 2;
-    // transform: skewY(0deg);
+    top: -2px;
+    z-index: 2; // transform: skewY(0deg);
     // -webkit-transform: skewY(0deg);
     @include desde($large) {
         position: relative;
-        top: -120px;
-        //-webkit-transform:skewY(-1deg);
+        top: -120px; //-webkit-transform:skewY(-1deg);
     }
 }
 
@@ -35,7 +31,6 @@
     background-image: none !important;
     transition: all 1s;
     width: 5%;
-    
 }
 
 .carousel-control :hover {
@@ -96,10 +91,8 @@
         //-webkit-transform:skewY(1deg);
     }
     @include desde($x-large) {
-    
-      top: 30%; 
-     
-  }
+        top: 30%;
+    }
     &__title {
         //   border: 1px solid black;
         font-family: $oswaldm;
@@ -145,25 +138,22 @@
     p {
         margin: 0px;
         .carousel-caption__click {
-            border: none;
-            padding: 5px;
+            position: relative;
             font-family: $robotob;
-            font-size: .7em;
-            color: $black; //border-radius: 10px;
-            // transform: skewY(-5deg);
+            font-size: .6em;
+            letter-spacing: 2px;
+            width: auto;
+            height: 200px;
+            padding: 5px;
             @include desde($mediun) {
-                height: 80px;
-                padding: 10px 20px;
-                position: relative;
                 top: 30px;
+                font-size: 1em;
+                padding: 10px 30px;
             }
             @include desde($large) {
-              font-size: 1em;
-                top: 0px;
-                padding: 10px;
                 line-height: 5;
+           
             }
-       
             &:focus {
                 display: none;
             }

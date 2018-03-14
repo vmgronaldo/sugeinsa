@@ -654,7 +654,7 @@ summary{
 .button{
   color:#fff;
   font-size:1.8em;
-  transition:all 1s;
+  transition:all .25s;
 }
 
 .button.primary{
@@ -664,30 +664,35 @@ summary{
 .button.primary:hover{
   background:#28303b;
   color:#fed443;
-  transition:all 1s;
+  transition:all .25s;
   text-decoration:none;
 }
 
 .button.secondary{
-  background:#28303b;
+  background:transparent;
+  color:#1b1b1c;
+  border:1px solid #1b1b1c;
+  border-radius:3px;
 }
 
 .button.secondary:hover{
   background:#1b1b1c;
   color:#fed443;
-  transition:all 1s;
+  transition:all .25s;
   text-decoration:none;
 }
 
 .button.tercer{
-  background:#fed443;
-  color:#1b1b1c;
+  background:transparent;
+  border:1px solid #fed443;
+  color:#fff;
+  border-radius:3px;
 }
 
 .button.tercer:hover{
   background:#1b1b1c;
   color:#fed443;
-  transition:all 1s;
+  transition:all .25s;
   text-decoration:none;
 }
 
@@ -699,7 +704,7 @@ summary{
 .button.contact:hover{
   background:#fed443;
   color:#1b1b1c;
-  transition:all 1s;
+  transition:all .25s;
   text-decoration:none;
 }
 
@@ -1167,27 +1172,25 @@ summary{
 }
 
 .carousel-caption p .carousel-caption__click{
-  border:none;
-  padding:5px;
+  position:relative;
   font-family:robotbold;
-  font-size:.7em;
-  color:#1b1b1c;
+  font-size:.6em;
+  letter-spacing:2px;
+  width:auto;
+  height:200px;
+  padding:5px;
 }
 
 @media screen and (min-width:768px){
   .carousel-caption p .carousel-caption__click{
-    height:80px;
-    padding:10px 20px;
-    position:relative;
     top:30px;
+    font-size:1em;
+    padding:10px 30px;
   }
 }
 
 @media screen and (min-width:1024px){
   .carousel-caption p .carousel-caption__click{
-    font-size:1em;
-    top:0;
-    padding:10px;
     line-height:5;
   }
 }
@@ -1454,7 +1457,7 @@ summary{
   height:360px;
   cursor:pointer;
   padding:40px;
-  margin:20px 0;
+  margin:20px 0 0;
   text-align:center;
   box-shadow:0 4px 12px rgba(0,0,0,.1);
   transition:all 1s;
@@ -1537,14 +1540,11 @@ summary{
 }
 
 .main-about__item__items__button{
-  color:#fed443 !important;
-  border:none;
   width:auto;
   height:200px;
   padding:10px 40px;
   font-family:robotbold;
   font-size:1em;
-  color:#28303b;
   z-index:8;
 }
 
@@ -1603,14 +1603,12 @@ summary{
 
 .main-catalog__item__content__button{
   text-decoration:none;
-  border:none;
   width:auto;
-  height:50px;
-  padding:0 40px;
+  padding:10px 40px;
   font-family:robotbold;
   font-size:1em;
-  border-radius:50px;
-  color:#28303b;
+  letter-spacing:2px;
+  background:transparent;
 }
 
 .main-catalog__item__content__button:focus{
@@ -2282,12 +2280,12 @@ hr{
 }
 
 .main-contact .container-fluid .content-2-cotizacion form .btnCotizacion{
-  border:none;
   width:auto;
   height:50px;
-  padding:10px 40px;
-  font-family:oswaldm;
+  padding:10px 30px;
+  font-family:robotbold;
   font-size:1em;
+  letter-spacing:2px;
 }
 
 .main-contact .container-fluid .form-contact__title{
@@ -2419,12 +2417,12 @@ hr{
 }
 
 .main-contact .container-fluid .form-contact__content2 form .btnCotizacion{
-  border:none;
   width:auto;
   height:50px;
-  padding:10px 40px;
-  font-family:oswaldm;
+  padding:10px 30px;
+  font-family:robotbold;
   font-size:1em;
+  letter-spacing:2px;
 }
 
 .main-contact .content-map{
