@@ -114,13 +114,11 @@ $('#carousel-text').html($('#slide-content-' + id).html());
 
 
 /*   GALLYER */
-
 $('.filter').hide();
 $(".filter-button").click(function () {
   var value = $(this).attr('data-filter');
   if (value == "pr") {
       $('.filter').show('1000');
-      
   } else {
       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');

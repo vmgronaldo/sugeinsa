@@ -116,7 +116,6 @@ var listo = exports.listo = function listo() {
     }); */
 
     /*   GALLYER */
-
     $('.filter').hide();
     $(".filter-button").click(function () {
       var value = $(this).attr('data-filter');
