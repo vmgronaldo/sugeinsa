@@ -45,7 +45,6 @@ var count = exports.count = function count() {
 };
 var listo = exports.listo = function listo() {
   $(document).ready(function () {
-
     $("#SliderPrincipal").carousel();
 
     /*
@@ -66,7 +65,6 @@ var listo = exports.listo = function listo() {
     /*
     Lineas Sliders
     */
-
     $('.counter').counterUp({
       delay: 10,
       time: 1000
@@ -119,11 +117,10 @@ var listo = exports.listo = function listo() {
 
     /*   GALLYER */
 
+    $('.filter').hide();
     $(".filter-button").click(function () {
       var value = $(this).attr('data-filter');
-
-      if (value == "all") {
-        //$('.filter').removeClass('hidden');
+      if (value == "pr") {
         $('.filter').show('1000');
       } else {
         //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');

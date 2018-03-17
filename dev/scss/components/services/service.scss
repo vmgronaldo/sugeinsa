@@ -234,10 +234,13 @@
 }
 
 .filter-button {
+
+  font-family:$robotob;
     font-size: 1.2em;
     border-radius: 5px;
     text-align: center;
-    color: $white;
+    border:1px solid $black !important;
+    color: $blue !important;
     margin:5px;
 
 }

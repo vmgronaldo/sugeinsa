@@ -53,8 +53,7 @@ top:-50px;
                 font-family: $robotol;
                 font-size: 1.2em;
                 color:$black;
-                @include desde($mediun) {
-                 
+                @include desde($mediun) {               
                     padding: 60px 0px;
                 }
             

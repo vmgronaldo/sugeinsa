@@ -2840,10 +2840,12 @@ hr{
 }
 
 .filter-button{
+  font-family:robotbold;
   font-size:1.2em;
   border-radius:5px;
   text-align:center;
-  color:#fff;
+  border:1px solid #1b1b1c !important;
+  color:#28303b !important;
   margin:5px;
 }
 

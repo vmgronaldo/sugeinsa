@@ -38,7 +38,6 @@ export const count = () => {
 }
 export const listo = () => {
   $(document).ready(function () {
-
     $("#SliderPrincipal").carousel();
 
     /*
@@ -60,7 +59,6 @@ export const listo = () => {
     /*
     Lineas Sliders
     */
-    baguetteBox.run('.tz-gallery');
     $('.counter').counterUp({
       delay: 10,
       time: 1000
@@ -117,14 +115,12 @@ $('#carousel-text').html($('#slide-content-' + id).html());
 
 /*   GALLYER */
 
-
-
+$('.filter').hide();
 $(".filter-button").click(function () {
   var value = $(this).attr('data-filter');
-
-  if (value == "all") {
-      //$('.filter').removeClass('hidden');
+  if (value == "pr") {
       $('.filter').show('1000');
+      
   } else {
       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
