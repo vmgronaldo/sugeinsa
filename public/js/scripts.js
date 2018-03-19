@@ -115,24 +115,24 @@ var listo = exports.listo = function listo() {
     $('#carousel-text').html($('#slide-content-' + id).html());
     }); */
 
-    /*   GALLYER */
     $('.filter').hide();
     $(".filter-button").click(function () {
       var value = $(this).attr('data-filter');
-      if (value == "pr") {
+
+      if (value == "all") {
         $('.filter').show('1000');
       } else {
-        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+
         $(".filter").not('.' + value).hide('3000');
         $('.filter').filter('.' + value).show('3000');
       }
     });
 
-    if ($(".filter-button").removeClass("active")) {
+    /* if ($(".filter-button").removeClass("active")) {
       $(this).removeClass("active");
     }
     $(this).addClass("active");
+     */
 
     var timer = 4000;
 
