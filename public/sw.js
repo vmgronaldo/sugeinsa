@@ -1,4 +1,4 @@
-self.addEventListener('install', e => {
+/* self.addEventListener('install', e => {
   const timeStamp = Date.now();
   e.waitUntil(
       caches.open('SugeinsaServicio').then(cache => {
@@ -31,7 +31,7 @@ self.addEventListener('install', e => {
               .then(() => self.skipWaiting());
       })
   );
-});
+}); */
 
 self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());

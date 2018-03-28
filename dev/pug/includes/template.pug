@@ -63,8 +63,8 @@ html(lang="es")
               i(class="icon icon-facebook")
             a( target="__blank" href='https://www.facebook.com/Sugeinsa/' title="Facebook Sugeinsa") 
               i(class="icon icon-envelope")
-    if currentPage != 'inicio'
-      header(class="main-header opacidad" )
+    
+      header(class="main-header")
         .l-container
           .head__header 
             a( href='/' id='content-logo' title="Inicio" accesskey="I")
@@ -73,17 +73,7 @@ html(lang="es")
                 div( class='togle' id='toggle-menu')             
                   i( class="icon-bars")  
                 include ../blocks/menu.pug  
-    else 
-      header(class="main-header ")
-        .l-container
-          .head__header 
-            a( href='/' id='content-logo')
-
-                img(class="logo" src="img/categorias/logo.svg" type="image/svg+xml" title="Inicio")
-            nav( class='main-nav' id='main-nav') 
-                div( class='togle' id='toggle-menu')             
-                  i( class="icon-bars")  
-                include ../blocks/menu.pug  
+    
     block main
 
     footer.main-footer  

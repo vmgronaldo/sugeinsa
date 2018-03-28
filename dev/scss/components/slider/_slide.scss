@@ -7,13 +7,9 @@
 }
 
 #SliderPrincipal {
-    position: relative;
-    top: -2px;
-    z-index: 2; // transform: skewY(0deg);
-    // -webkit-transform: skewY(0deg);
-    @include desde($large) {
-        position: relative;
-        top: -120px; //-webkit-transform:skewY(-1deg);
+    height: 150px;
+    @include desde($small) {
+        height: auto;
     }
 }
 
@@ -26,41 +22,25 @@
     font-weight: bold !important;
 }
 
-.carousel-control {
-    z-index: 9999999999999999999;
-    background-image: none !important;
-    transition: all 1s;
-    width: 5%;
-}
-
-.carousel-control :hover {
-    transform: scale(2);
-    transition: all 1s;
-}
-
-.carousel-indicators {
-    //  border:1px solid red;
-    position: absolute;
-    bottom: 100px;
-    display: none;
-    @include desde($large) {
-        bottom: 70px;
-        display: flex;
-    }
-    @include desde($x-large) {
-        bottom: 110px;
-    }
-}
-
 .carousel-inner {
     width: 100%;
     top: -1px;
+    height: 150px;
+    @include desde($small) {
+        height: auto;
+    }
+    .item {
+        .img-slider {
+            height: 150px;
+            @include desde($small) {
+                height: auto;
+            }
+        }
+    }
 }
 
-.item {
-    // border: 1px solid red;
-}
 
+/* 
 .carousel-caption {
     position: absolute;
     left: 20%;
@@ -160,3 +140,4 @@
         }
     }
 }
+ */

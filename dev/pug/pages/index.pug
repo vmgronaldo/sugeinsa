@@ -11,59 +11,16 @@ block main
       li(data-target="#SliderPrincipal" data-slide-to="2" )
     div.carousel-inner
       div(class="item active")
-        img(src="img/Ferreteria Industrial.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
-        div.content-slider
-          div(class="carousel-caption fade-in")    
-            h1.carousel-caption__title
-              span Clientes de  
-              span servicio de construccion 
-            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
-            p 
-              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+        img(class="img-slider" src="img/construccion.jpg" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")       
       div(class="item ")
-        img(src="img/Venta de Herramientas Industriales.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
-        div.content-slider
-          div(class="carousel-caption fade-in")    
-            h1.carousel-caption__title
-              span Clientes de  
-              span servicio de construccion 
-            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
-            p   
-              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+        img(class="img-slider" src="img/herramientas.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")      
       div(class="item")
-        img(src="img/Herramientas de Gafitería.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")
-        div.content-slider
-          div(class="carousel-caption fade-in")    
-            h1.carousel-caption__title
-              span Clientes de  
-              span servicio de construccion 
-            p.carousel-caption__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem dolorum deleniti, earum, eius dicta sed ipsam ipsa, minus est natus aut quod voluptates! Veritatis totam tempora laboriosam beatae quas!
-            p
-              a(class="carousel-caption__click button tercer" href="#" role="button") VER PRODUCTO
+        img(class="img-slider" src="img/herramientas.png" style="width:100%" alt="Ferreteria Industrial" title="Ferreteria Industrial")      
     a(class="carousel-control left" href="#SliderPrincipal" data-slide="prev" title="Anterior" alt="Slider Antetior")    
       span(class="glyphicon glyphicon-chevron-left")
     a(class="carousel-control right" href="#SliderPrincipal" data-slide="next" title="Siguiente" alt="Slider Siguiente")    
       span(class="glyphicon glyphicon-chevron-right")
   <!-- Slider Inicio-->
-
-  <!-- Contador Inicio-->
-
-  div(class="main-count l-container zoom-in")
-    div.main-count__item
-      span(class="main-count__item__number counter") 300
-      p.main-count__item__text Clientes
-    div.main-count__item
-      span(class="main-count__item__number counter") 215
-      p.main-count__item__text Proveedores
-    div.main-count__item
-      span(class="main-count__item__number counter") 205
-      p.main-count__item__text Marcas
-    div.main-count__item
-      span(class="main-count__item__number counter") 95
-      p.main-count__item__text Aliados
-
-
-  <!-- Contador Inicio-->
   <!-- categorias Inicio-->
   div(class="main-category l-container bounce-left")
       ul(class="main-category__item" id="c")
@@ -107,7 +64,14 @@ block main
           a(class="main-category__item__items__link" href="lineas" title="Seguridad e Industrial")
             img(class="main-category__item__items__link__img" src="img/categorias/casi.svg" type="image/svg+xml" alt="Abastecimiento Genereal de Seguridad e Industrial" title="Pintura y acabados")
             span.main-category__item__items__link__title Seguridad e Industrial
-
+        li.main-category__item__items
+          a(href="lineas" class="main-category__item__items__link" title="Abastecimiento en General")
+            img(class="main-category__item__items__link__img" src="img/categorias/caag.svg" type="image/svg+xml" alt=" Abastecimiento Genereal de Abastecimiento en General" title="Abastecimiento en General")
+            span.main-category__item__items__link__title Abastecimiento en General
+        li.main-category__item__items
+          a(href="lineas" class="main-category__item__items__link" title="Articulos de Oficina")
+            img(class="main-category__item__items__link__img" src="img/categorias/caao.svg" type="image/svg+xml" alt="Abastecimiento Genereal de Articulos de Oficina" title="Articulos de Oficina")
+            span.main-category__item__items__link__title Articulos de Oficina
   <!-- categorias Inicio-->
 
   <!-- Informacion Inicio-->
@@ -135,7 +99,7 @@ block main
         div.main-about__item__items__circle
           i(class="main-about__item__items__circle__icon icon-bulb")
         span.main-about__item__items__title Areas de Negocio
-        p.main-about__item__items__text Tenemos productos para el rubro industrial, minero, medico, agricultor,petrolero, tecnológico, etc. Contamos con todos los productos que te puedas imaginar por que contamos con mas de 300 marcas.
+        p.main-about__item__items__text Tenemos productos para el rubro industrial, minero, medico, agricultor,petrolero, tecnológico, etc. Contamos con todos los productos que te puedas imaginar.
         a(href="lineas" class="main-about__item__items__button button secondary" accesskey="A") INFORMACION
       div.main-about__item__items 
         div.main-about__item__items__circle
@@ -229,8 +193,26 @@ block main
         div(class="col-sm-6 col-md-4")
           a(class="lightbox")
             img(src="img/about/equipos-de-seguridad.png" alt="Equipos de Seguridad" title="Equipos de Seguridad")
-    hr
+    
   <!-- Galleria Inicio-->
+  <!-- Contador Inicio-->
+  div(class="main-count zoom-in")
+    div(class="main-count__content l-container") 
+      div.main-count__content__item
+        span(class="main-count__content__item__number counter") 300
+        p.main-count__content__item__text Clientes
+      div.main-count__content__item
+        span(class="main-count__content__item__number counter") 250
+        p.main-count__content__item__text Proveedores  
+      div.main-count__content__item
+        span(class="main-count__content__item__number counter") 150
+        p.main-count__content__item__text Marcas
+      div.main-count__content__item
+        span(class="main-count__content__item__number counter") 100
+        p.main-count__content__item__text Aliados
+
+  <!-- Contador Inicio-->
+
 
   <!-- Mapa Inicio-->
 

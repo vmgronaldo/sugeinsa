@@ -1,11 +1,9 @@
 .main-catalog {
-    // border:1px solid red;
     background: $blue;
     position: relative;
-    top: -120px;
     z-index: 1;
     color: #fff;
-    height: 500px;
+    //height: 500px;
     overflow-x: hidden !important;
     @include desde($mediun) {
         background: url('../../../img/catalogo.jpg') no-repeat;
@@ -21,7 +19,7 @@
             padding: 100px 0px;
             text-align: center;
             @include desde($mediun) {
-              padding: 150px 0px;
+              padding: 120px 0px;
             }
         
          

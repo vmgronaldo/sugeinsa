@@ -1,14 +1,13 @@
     .main-ubicacion {
-    height: auto; // border: 1px solid red;
-    //margin-bottom: 50px;
+
     &__content {
         background: linear-gradient(180deg, #fff, rgba(204, 255, 250, 0.5));
-        text-align: center; //padding-top: 50px;
+        text-align: center; 
         &__title {
             color: $blue;
             font-size: 2em;
             font-family: $robotob;
-            margin: 20px 0px;
+            margin: 20px 0px 50px 0px;
   
         }
         hr {
@@ -23,6 +22,7 @@
         &__map {
             // padding-top: 50px; 
             //border: 5px solid $white;
+            margin: 50px 0 0 0;
             height: 500px;
             iframe {
                 width: 100%;

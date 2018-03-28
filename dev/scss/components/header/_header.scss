@@ -63,16 +63,12 @@
         }
     }
 }
-.opacidad{
-  opacity: 1 !important;
-}
+
 .main-header {
     background: $blue;
-    position: relative;
-    z-index: 999999999999 !important;
     @include desde($large) {
       height: 80px;
-      opacity: 0.9;
+ 
    
     }
  
@@ -96,14 +92,13 @@
                 }
                 .logo {
                     // border:1px solid red;
-                    width: 80%;
+                    width: 60%;
                     height: 80px;
                     margin: 0px auto;
                     @include desde($mediun) {
                         margin: 10px auto;
                     }
                     @include desde($large) {
-                      width: 60%;
                         margin: 0px 0px 0px 0px;
                     }
                 }

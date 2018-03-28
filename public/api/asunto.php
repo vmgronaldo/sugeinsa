@@ -1,7 +1,8 @@
 
 
+
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\PHPMailer;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -48,38 +49,38 @@ if ($nombre == '' || $email == '' || $asunto == '' || $mensaje == '') {
     "Asunto: $asunto \n<br />" .
     "Mensaje: $mensaje \n<br />";
 
-
-    
     
 
 // Datos del servidor SMTP
 
-  $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
 
-  $mail->isSMTP();
+    $mail->isSMTP();
     //Set the hostname of the mail server
-  $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'smtp.gmail.com';
     // use
     // $mail->Host = gethostbyname('smtp.gmail.com');
     // if your network does not support SMTP over IPv6
     //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-  $mail->Port = 587;
+    $mail->Port = 587;
     //Set the encryption system to use - ssl (deprecated) or tls
-  $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = 'tls';
     //Whether to use SMTP authentication
-  $mail->SMTPAuth = true;
+    $mail->SMTPAuth = true;
     //Username to use for SMTP authentication - use full email address for gmail
-  $mail->Username = "vmgronaldo@gmail.com";
+    $mail->Username = "vmgronaldo@gmail.com";
     //Password to use for SMTP authentication
-  $mail->Password = "ronaldoviza123";
+    $mail->Password = "ronaldoviza123";
 
-  $mail->CharSet = 'UTF-8';
-  if ($mail->Send())
-  echo "1";
-  else
-  echo "0";
+// Activo condificacción utf-8
+    $mail->CharSet = 'UTF-8';
+    if ($mail->Send())
+    echo "1";
+    else
+    echo "0";
+
 }
-?>
 
+?>
 </body>
 </html>
