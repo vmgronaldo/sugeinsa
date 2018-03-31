@@ -1010,6 +1010,10 @@ summary{
           justify-content:center;
 }
 
+.carousel-control{
+  background-image:none !important;
+}
+
 .text2{
   color:#1b1b1c !important;
   font-weight:700 !important;
