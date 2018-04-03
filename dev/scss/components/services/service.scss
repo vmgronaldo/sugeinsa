@@ -1,12 +1,7 @@
 .service {
-    margin-top: 30px;
-    margin-bottom: 100px; // border:1px solid red;
     width: 90%;
+    margin: 30px auto;
 
-    @include desde($large) {
-      width: 80%;
-     
-  }
 }
 
 .active {
@@ -67,7 +62,7 @@
         margin: 20px 0px;
         blockquote {
             padding: 21px 30px 18px 30px;
-            border-left: 5px solid #e9d900;
+            border-left: 5px solid #fed443;
             background: $white;
             font-size: 1.2em;
             line-height: 26px;
@@ -115,7 +110,7 @@
     padding-bottom: 20px;
     display: none;
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
     border-radius: .25rem;
  
     .card-body {

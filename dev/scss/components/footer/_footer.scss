@@ -19,7 +19,7 @@
             font-size: 1.8em;
         }
         @include desde($large) {
-            width:80%;
+            width:90%;
             flex-wrap: wrap;
             justify-content: center;
             margin: 0px auto;
@@ -31,7 +31,7 @@
             @include desde($large) {
               height: 250px;
                 margin: 20px 0px 20px 0px;
-                width: calc(32% - .1em);
+                width: calc(35% - .1em);
                 text-align: left;
             }
             &__title {
@@ -81,7 +81,7 @@
               height: 250px;
                 margin: 20px 0px 20px 0px;
                 text-align: left;
-                width: calc(32% - .1em);
+                width: calc(25% - .1em);
             }
             &__title {
                 color: $yellow;

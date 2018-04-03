@@ -20,8 +20,8 @@
             }
         }
         &__item2 {
-            width: 80%;
-            @include desde($x-large) {
+            width: 90%;
+            @include desde($large) {
        
                 display: flex;
                 flex-direction: row;

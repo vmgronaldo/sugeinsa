@@ -534,8 +534,8 @@ summary{
 }
 
 .l-container{
-  width:80%;
-  max-width:1200px;
+  width:90%;
+  max-width:1300px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -1251,7 +1251,7 @@ summary{
 
 @media screen and (min-width:1024px){
   .main-about__item{
-    width:calc(90% - 10em);
+    width:calc(90% - .1em);
     margin:0 auto;
   }
 }
@@ -1298,11 +1298,11 @@ summary{
   }
 }
 
-@media screen and (min-width:1300px){
+@media screen and (min-width:1024px){
   .main-about__item__items{
     padding:40px 25px;
     width:calc(32% - .2em);
-    margin:10px 5px;
+    margin:10px 0;
   }
 }
 
@@ -1698,10 +1698,10 @@ hr{
 }
 
 .main-nosotros .main-nosotros__content1__item2{
-  width:80%;
+  width:90%;
 }
 
-@media screen and (min-width:1300px){
+@media screen and (min-width:1024px){
   .main-nosotros .main-nosotros__content1__item2{
     display:-webkit-box;
     display:-ms-flexbox;
@@ -2021,10 +2021,6 @@ hr{
   line-height:1.2;
 }
 
-.main-contact .container-fluid .content-1-cotizacion p{
-  margin:65px 0;
-}
-
 .main-contact .container-fluid .content-1-cotizacion blockquote{
   border-left:5px solid #fed443;
   margin:50px 0;
@@ -2067,10 +2063,6 @@ hr{
   background:#fed443;
   border-radius:3px;
   margin:10px 0 0;
-}
-
-.main-contact .container-fluid .content-2-cotizacion form{
-  padding:40px 0 20px;
 }
 
 .main-contact .container-fluid .content-2-cotizacion form input[type=text],.main-contact .container-fluid .content-2-cotizacion form select{
@@ -2418,15 +2410,8 @@ hr{
 }
 
 .service{
-  margin-top:30px;
-  margin-bottom:100px;
   width:90%;
-}
-
-@media screen and (min-width:1024px){
-  .service{
-    width:80%;
-  }
+  margin:30px auto;
 }
 
 .active{
@@ -2481,7 +2466,7 @@ hr{
 
 .service-content .mensaje blockquote{
   padding:21px 30px 18px;
-  border-left:5px solid #e9d900;
+  border-left:5px solid #fed443;
   background:#fff;
   font-size:1.2em;
   line-height:26px;
@@ -2523,7 +2508,7 @@ hr{
   padding-bottom:20px;
   display:none;
   background-color:#fff;
-  border:1px solid rgba(0,0,0,.125);
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
   border-radius:.25rem;
 }
 
@@ -2854,7 +2839,7 @@ hr{
 
 @media screen and (min-width:1024px){
   .main-footer__content{
-    width:80%;
+    width:90%;
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
     -webkit-box-pack:center;
@@ -2872,7 +2857,7 @@ hr{
   .main-footer__content__info{
     height:250px;
     margin:20px 0;
-    width:calc(32% - .1em);
+    width:calc(35% - .1em);
     text-align:left;
   }
 }
@@ -2929,7 +2914,7 @@ hr{
     height:250px;
     margin:20px 0;
     text-align:left;
-    width:calc(32% - .1em);
+    width:calc(25% - .1em);
   }
 }
 
