@@ -15,8 +15,8 @@
 <body>
 <?php
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
+$nombre = $_POST['nombre2'];
+$email = $_POST['email2'];
 $asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 if ($nombre == '' || $email == '' || $asunto == '' || $mensaje == '') {
