@@ -43,10 +43,28 @@ var count = exports.count = function count() {
 
   });
 };
+
 var listo = exports.listo = function listo() {
   $(document).ready(function () {
     $("#SliderPrincipal").carousel();
 
+    $('.filter').hide();
+
+    $(".filter-button").click(function () {
+      var value = $(this).attr('data-filter');
+      $('.alert').remove();
+      if (value == "all") {
+        $('.filter').show('1000');
+      } else {
+        $(".filter").not('.' + value).hide('3000');
+        $('.filter').filter('.' + value).show('3000');
+      }
+
+      if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+    });
     /*
     Lineas Sliders
     */
@@ -115,18 +133,17 @@ var listo = exports.listo = function listo() {
     $('#carousel-text').html($('#slide-content-' + id).html());
     }); */
 
-    $('.filter').hide();
-    $(".filter-button").click(function () {
+    /* $(".filter-button").click(function () {
       var value = $(this).attr('data-filter');
-
-      if (value == "all") {
+      
+      if (value == "1") {
         $('.filter').show('1000');
       } else {
-
-        $(".filter").not('.' + value).hide('3000');
-        $('.filter').filter('.' + value).show('3000');
+    
+          $(".filter").not('.' + value).hide('3000');
+          $('.filter').filter('.' + value).show('3000');
       }
-    });
+    }); */
 
     /* if ($(".filter-button").removeClass("active")) {
       $(this).removeClass("active");

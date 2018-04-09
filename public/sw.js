@@ -1,9 +1,9 @@
-/*  self.addEventListener('install', e => {
+ self.addEventListener('install', e => {
   const timeStamp = Date.now();
   e.waitUntil(
       caches.open('SugeinsaServicio').then(cache => {
           return cache.addAll([
-                  ``,
+                /*   ``,
                   `index.html?timestamp=${timeStamp}`,
                   `catalogo.html?timestamp=${timeStamp}`,
                   `contactanos.html?timestamp=${timeStamp}`,
@@ -25,15 +25,15 @@
                   `js/nprogress.min.js?timestamp=${timeStamp}`,
                   `js/ajax.min.js?timestamp=${timeStamp}`,
                   `js/scripts.min.js?timestamp=${timeStamp}`,
-        
+         */
 
               ])
               .then(() => self.skipWaiting());
       })
   );
 }); 
- */
-self.addEventListener('activate', event => {
+
+ self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 

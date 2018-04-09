@@ -726,7 +726,7 @@ summary{
   top:0;
   background:#28303b;
   opacity:1;
-  z-index:5;
+  z-index:6;
 }
 
 .headtop .info__head{
@@ -829,6 +829,8 @@ summary{
 
 .main-header{
   background:#28303b;
+  position:relative;
+  z-index:4;
 }
 
 @media screen and (min-width:1024px){
@@ -1016,6 +1018,7 @@ summary{
 }
 
 .carousel-indicators{
+  z-index:1;
   -webkit-box-pack:center;
       -ms-flex-pack:center;
           justify-content:center;
@@ -1128,6 +1131,17 @@ summary{
   .main-count__content__item__text{
     font-size:2em;
   }
+}
+
+.gray{
+  position:relative;
+  box-sizing:border-box;
+  height:50px;
+  margin-top:-30px;
+  background:url(../../../img/gray-div.png) no-repeat;
+  background-position:0 0;
+  background-repeat:no-repeat;
+  z-index:5;
 }
 
 .main-category{
@@ -1374,7 +1388,7 @@ summary{
   padding:10px 40px;
   font-family:robotbold;
   font-size:1em;
-  z-index:7;
+  z-index:8;
 }
 
 .main-catalog{
@@ -2320,7 +2334,7 @@ hr{
   margin:20px 20px 0;
   position:relative;
   transition:all .25s;
-  z-index:4;
+  z-index:5;
 }
 
 @media screen and (min-width:480px){
@@ -2365,7 +2379,7 @@ hr{
   text-decoration:none;
   font-family:oswaldm;
   color:#fff;
-  z-index:6;
+  z-index:7;
   transition:all .25s;
 }
 
@@ -2482,7 +2496,11 @@ hr{
 
 .service-content .descripcion__list{
   list-style:circle;
-  padding-left:20px;
+  padding:0;
+}
+
+.service-content .descripcion__list div{
+  padding:0;
 }
 
 .service-content .descripcion__list li{
@@ -2538,10 +2556,22 @@ hr{
 .card .card-button{
   width:100%;
   padding:10px;
-  font-size:1.2em;
-  border-radius:5px;
+  font-size:1em;
   line-height:2;
   font-family:robotbold;
+  background:#5e5e5e;
+  text-decoration:none;
+  background:transparent;
+  color:#1b1b1c;
+  border:1px solid #1b1b1c;
+  border-radius:3px;
+}
+
+.card .card-button :active,.card .card-button:hover{
+  background:#1b1b1c;
+  color:#fed443;
+  transition:all .25s;
+  text-decoration:none;
 }
 
 .card .card-button .icon-tcard{
@@ -2623,11 +2653,6 @@ hr{
   top:4px;
   padding:5px;
 }
-.bgalery{
-  border:none !important;
-  color:#fff !important;
-}
-
 .bgalery:hover{
   color:#fed443 !important;
 }
@@ -2650,19 +2675,16 @@ hr{
   border-bottom:1px solid #5e5e5e;
 }
 
-.filter-button{
+.btnfilter{
   font-family:robotbold;
-  font-size:1.2em;
+  font-size:1em;
   border-radius:5px;
   text-align:center;
-  border:1px solid #1b1b1c !important;
-  color:#28303b !important;
-  margin:5px;
-}
-
-.btn-default:active .filter-button:active{
-  background-color:#42b32f;
-  color:#fff;
+  color:#28303b;
+  margin:0 0 5px 5px;
+  padding:8px;
+  outline:0;
+  border-style:none;
 }
 
 .port-image{

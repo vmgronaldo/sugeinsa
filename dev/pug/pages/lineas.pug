@@ -54,15 +54,15 @@ block main
             div.card-body
               h5.card-title ¿Como podemos ayudarte?
               p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar unasolicitud en línea.
-              a(href="catalogo" target="_blank" class="card-button button secondary")
-                i(class="icon-tcard icon-phone")   Ver catalogo
+              a(href="catalogo" target="_blank" class="card-button")
+                i(class="icon-tcard icon-phone")  Ver catalogo
                   
           div(class="card fade-in" style="width: auto;")
             img( class="card-img-top" src="img//cotiza-con-nosotros.jpg" width="100%" alt="Cotiza con Nosotros" title="Cotiza con Nosotros")
             div.card-body
               h5.card-title ¿Como podemos ayudarte?
               p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar una solicitud en línea.
-              a(href="contactanos" class="card-button button secondary")
+              a(href="contactanos" class="card-button ")
                 i(class="icon-tcard icon-phone")   Cotizar
 
           div(class="card fade-in" style="width: auto;")
@@ -70,7 +70,7 @@ block main
             div(class="card-body")
               h5(class="card-title") ¿Como podemos ayudarte?
               p.card-text Póngase en contacto con nosotros en la oficina exacto más cercana a usted o presentar una solicitud en línea.
-              a(href="contactanos" class="card-button button secondary")
+              a(href="contactanos" class="card-button ")
                 i(class="icon-tcard icon-phone")   Contactanos
 
 
@@ -120,13 +120,16 @@ block main
                 h1(class="gallery-title") Algunos Productos
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Alimentos y Bebidas
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Articulos Deportivos
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Cafeteria
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Envases y Embalajes
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Refrigeracion
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Vehiculos y Accesorios
+                button(class="btnfilter  filter-button" data-filter="1") Alimentos y Bebidas
+                button(class="btnfilter  filter-button" data-filter="2") Articulos Deportivos
+                button(class="btnfilter  filter-button" data-filter="3") Cafeteria
+                button(class="btnfilter  filter-button" data-filter="4") Envases y Embalajes
+                button(class="btnfilter  filter-button" data-filter="5") Refrigeracion
+                button(class="btnfilter  filter-button" data-filter="6") Vehiculos y Accesorios
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
+              
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -450,15 +453,17 @@ block main
                 h1(class="gallery-title") Algunos Productos
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") clips y mas
-                button(class="btn bgalery button secondary filter-button" data-filter="2") caudernos y blocks
-                button(class="btn bgalery button secondary filter-button" data-filter="3") engramapadoras y mas
-                button(class="btn bgalery button secondary filter-button" data-filter="4") lapices y plumones
-                button(class="btn bgalery button secondary filter-button" data-filter="5") tizas y mas
-                button(class="btn bgalery button secondary filter-button" data-filter="6") notas adhesivas y banderitas
-                button(class="btn bgalery button secondary filter-button" data-filter="7") perforadores y dispensadores
-                button(class="btn bgalery button secondary filter-button" data-filter="8") reglas y escuadras
+                button(class="btnfilter  filter-button" data-filter="1") clips y mas
+                button(class="btnfilter  filter-button" data-filter="2") caudernos y blocks
+                button(class="btnfilter  filter-button" data-filter="3") engramapadoras y mas
+                button(class="btnfilter  filter-button" data-filter="4") lapices y plumones
+                button(class="btnfilter  filter-button" data-filter="5") tizas y mas
+                button(class="btnfilter  filter-button" data-filter="6") notas adhesivas y banderitas
+                button(class="btnfilter  filter-button" data-filter="7") perforadores y dispensadores
+                button(class="btnfilter  filter-button" data-filter="8") reglas y escuadras
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -876,16 +881,18 @@ block main
                 h1(class="gallery-title") Algunos Productos
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Camaras y Redes
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Computadoras 
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Hardware
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Impresoras
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Laptos
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Monitores
-                button(class="btn bgalery button secondary filter-button" data-filter="7") Proyectores
-                button(class="btn bgalery button secondary filter-button" data-filter="8") Servidores y Ups 
-                button(class="btn bgalery button secondary filter-button" data-filter="9") Software 
+                button(class="btnfilter  filter-button" data-filter="1") Camaras y Redes
+                button(class="btnfilter  filter-button" data-filter="2") Computadoras 
+                button(class="btnfilter  filter-button" data-filter="3") Hardware
+                button(class="btnfilter  filter-button" data-filter="4") Impresoras
+                button(class="btnfilter  filter-button" data-filter="5") Laptos
+                button(class="btnfilter  filter-button" data-filter="6") Monitores
+                button(class="btnfilter  filter-button" data-filter="7") Proyectores
+                button(class="btnfilter  filter-button" data-filter="8") Servidores y Ups 
+                button(class="btnfilter  filter-button" data-filter="9") Software 
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -1427,15 +1434,17 @@ block main
                 h1(class="gallery-title") Seleccione una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Cables
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Interuptores y Tomacorrientes
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Tableros y Llaves Electricas
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Tuberías,Canaletas y Conexiones
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Pilas y Linteras
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Focos y fluorescentes led
-                button(class="btn bgalery button secondary filter-button" data-filter="7") Iluminacion Industrial y Comercial
-                button(class="btn bgalery button secondary filter-button" data-filter="8") Transformador
+                button(class="btnfilter  filter-button" data-filter="1") Cables
+                button(class="btnfilter  filter-button" data-filter="2") Interuptores y Tomacorrientes
+                button(class="btnfilter  filter-button" data-filter="3") Tableros y Llaves Electricas
+                button(class="btnfilter  filter-button" data-filter="4") Tuberías,Canaletas y Conexiones
+                button(class="btnfilter  filter-button" data-filter="5") Pilas y Linteras
+                button(class="btnfilter  filter-button" data-filter="6") Focos y fluorescentes led
+                button(class="btnfilter  filter-button" data-filter="7") Iluminacion Industrial y Comercial
+                button(class="btnfilter  filter-button" data-filter="8") Transformador
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -1917,14 +1926,16 @@ block main
                 h1(class="gallery-title") Selecione una categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Accesorios y seguridad para puertas
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Candados y cajas de seguridad
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Productos de Fijación
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Tubos y accesorios
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Bombas de agua
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Equipos para soldar
+                button(class="btnfilter  filter-button" data-filter="1") Accesorios y seguridad para puertas
+                button(class="btnfilter  filter-button" data-filter="2") Candados y cajas de seguridad
+                button(class="btnfilter  filter-button" data-filter="3") Productos de Fijación
+                button(class="btnfilter  filter-button" data-filter="4") Tubos y accesorios
+                button(class="btnfilter  filter-button" data-filter="5") Bombas de agua
+                button(class="btnfilter  filter-button" data-filter="6") Equipos para soldar
                 
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -2301,14 +2312,16 @@ block main
                 h1(class="gallery-title") Selecione una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Herramientas de mano
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Eléctricas portátiles
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Eléctricas estacionarias
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Herrmientas de trazados
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Herramientas  de corte
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Herramientas de golpe
-                button(class="btn bgalery button secondary filter-button" data-filter="7") Herramientas Neumáticas
+                button(class="btnfilter  filter-button" data-filter="1") Herramientas de mano
+                button(class="btnfilter  filter-button" data-filter="2") Eléctricas portátiles
+                button(class="btnfilter  filter-button" data-filter="3") Eléctricas estacionarias
+                button(class="btnfilter  filter-button" data-filter="4") Herrmientas de trazados
+                button(class="btnfilter  filter-button" data-filter="5") Herramientas  de corte
+                button(class="btnfilter  filter-button" data-filter="6") Herramientas de golpe
+                button(class="btnfilter  filter-button" data-filter="7") Herramientas Neumáticas
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -2752,18 +2765,20 @@ block main
                 h1(class="gallery-title") Selecione una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Agregados
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Drywall y techos
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Herramientas de construcción
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Tableros Aglomerados
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Lavaderos y Sanitarios
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Termas y calentadores
-                button(class="btn bgalery button secondary filter-button" data-filter="7") Accesorios para cocina y baños
-                button(class="btn bgalery button secondary filter-button" data-filter="8") Cerámicas y Porcelanatos
-                button(class="btn bgalery button secondary filter-button" data-filter="9") Puertas y Ventanas
-                button(class="btn bgalery button secondary filter-button" data-filter="10") Mallas galvanizadas
+                button(class="btnfilter  filter-button" data-filter="1") Agregados
+                button(class="btnfilter  filter-button" data-filter="2") Drywall y techos
+                button(class="btnfilter  filter-button" data-filter="3") Herramientas de construcción
+                button(class="btnfilter  filter-button" data-filter="4") Tableros Aglomerados
+                button(class="btnfilter  filter-button" data-filter="5") Lavaderos y Sanitarios
+                button(class="btnfilter  filter-button" data-filter="6") Termas y calentadores
+                button(class="btnfilter  filter-button" data-filter="7") Accesorios para cocina y baños
+                button(class="btnfilter  filter-button" data-filter="8") Cerámicas y Porcelanatos
+                button(class="btnfilter  filter-button" data-filter="9") Puertas y Ventanas
+                button(class="btnfilter  filter-button" data-filter="10") Mallas galvanizadas
 
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -3355,12 +3370,14 @@ block main
                 h1(class="gallery-title") Selecione una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Equipos de Limpieza
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Dispensadores y Recargas
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Herramientas de Limpieza
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Insumos de Limpieza
+                button(class="btnfilter  filter-button" data-filter="1") Equipos de Limpieza
+                button(class="btnfilter  filter-button" data-filter="2") Dispensadores y Recargas
+                button(class="btnfilter  filter-button" data-filter="3") Herramientas de Limpieza
+                button(class="btnfilter  filter-button" data-filter="4") Insumos de Limpieza
 
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -3627,13 +3644,15 @@ block main
                 h1(class="gallery-title") Seleciona una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Accesorios para pintar
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Escaleras
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Esmaltes y barnices
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Pegamentos y adhesivos
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Pintura Latex
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Productos para resanar         
+                button(class="btnfilter  filter-button" data-filter="1") Accesorios para pintar
+                button(class="btnfilter  filter-button" data-filter="2") Escaleras
+                button(class="btnfilter  filter-button" data-filter="3") Esmaltes y barnices
+                button(class="btnfilter  filter-button" data-filter="4") Pegamentos y adhesivos
+                button(class="btnfilter  filter-button" data-filter="5") Pintura Latex
+                button(class="btnfilter  filter-button" data-filter="6") Productos para resanar         
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a
@@ -4025,18 +4044,20 @@ block main
                 h1(class="gallery-title") Selecione una Categoria
               
               div(align="center")
-                button(class="btn bgalery button secondary filter-button" data-filter="1") Protección Respiratoria
-                button(class="btn bgalery button secondary filter-button" data-filter="2") Protección Visual
-                button(class="btn bgalery button secondary filter-button" data-filter="3") Protección Auditiva
-                button(class="btn bgalery button secondary filter-button" data-filter="4") Protección de Cabeza
-                button(class="btn bgalery button secondary filter-button" data-filter="5") Protección de Manos
-                button(class="btn bgalery button secondary filter-button" data-filter="6") Protección de Pies
-                button(class="btn bgalery button secondary filter-button" data-filter="7") Sistema de Bloqueo
-                button(class="btn bgalery button secondary filter-button" data-filter="8") Línea de Traje
-                button(class="btn bgalery button secondary filter-button" data-filter="9") Protección de Alturas
-                button(class="btn bgalery button secondary filter-button" data-filter="10") Seguridad Vial
-                button(class="btn bgalery button secondary filter-button" data-filter="11") Protección Contra Derrames
+                button(class="btnfilter  filter-button" data-filter="1") Protección Respiratoria
+                button(class="btnfilter  filter-button" data-filter="2") Protección Visual
+                button(class="btnfilter  filter-button" data-filter="3") Protección Auditiva
+                button(class="btnfilter  filter-button" data-filter="4") Protección de Cabeza
+                button(class="btnfilter  filter-button" data-filter="5") Protección de Manos
+                button(class="btnfilter  filter-button" data-filter="6") Protección de Pies
+                button(class="btnfilter  filter-button" data-filter="7") Sistema de Bloqueo
+                button(class="btnfilter  filter-button" data-filter="8") Línea de Traje
+                button(class="btnfilter  filter-button" data-filter="9") Protección de Alturas
+                button(class="btnfilter  filter-button" data-filter="10") Seguridad Vial
+                button(class="btnfilter  filter-button" data-filter="11") Protección Contra Derrames
               br
+              div(class="alert alert-info")
+                <strong>Porfavor!</strong> Para visualizar productos selecione una categoria.
               div.products-lineas
                 div(style="border:none !important;box-shadow:none !important;" class="gallery_product  filter 1 ih-item square effect6 from_top_and_bottom zoom-in")
                   a

@@ -66,6 +66,8 @@
 
 .main-header {
     background: $blue;
+    position: relative;
+    z-index: 9999;
     @include desde($large) {
       height: 80px;
  
